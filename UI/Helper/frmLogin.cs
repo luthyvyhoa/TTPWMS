@@ -53,10 +53,10 @@ namespace UI.Helper
         {
             if (dxValidationProvider1.Validate())
             {
-                string code = "";
-                string pass = "";
-                code = txtName.Text.Trim();
-                pass = txtPassword.Text.Trim();
+                string code = "itttp";
+                string pass = "@Ttp1234@";
+                //code = txtName.Text.Trim();
+                //pass = txtPassword.Text.Trim();
 
                 Wait.Start(this);
 
