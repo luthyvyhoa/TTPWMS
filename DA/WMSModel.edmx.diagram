@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="237c31783e754abe9b084f3babc00e04" Name="Diagram1" ZoomLevel="112">
+        <EntityTypeShape EntityType="SwireDBModel.Assignment" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerServiceOrder" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="SwireDBModel.Accidents" Width="1.5" PointX="17.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.AdminVersions" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Aisles" Width="1.5" PointX="8.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.AssignmentDetails" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.AssignmentEmployees" Width="1.5" PointX="2.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Assignments" Width="1.5" PointX="19.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Attachments" Width="1.5" PointX="17.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Authorizations" Width="1.5" PointX="4.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BarcodeScan_Android_Login" Width="1.5" PointX="27.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BarcodeScan_OrderDetails" Width="1.5" PointX="12.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BarcodeScan_Prefix" Width="1.5" PointX="10.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Bays" Width="1.5" PointX="20.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BillingByOvertimeDetails" Width="1.5" PointX="14.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BillingDetails" Width="1.5" PointX="5.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Billings" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BillingSummary" Width="1.5" PointX="5.75" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BillingSummaryDetails" Width="1.5" PointX="8" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BlastFreezerDetails" Width="1.5" PointX="30" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BlastFreezers" Width="1.5" PointX="27.75" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BusinessTripPrices" Width="1.5" PointX="28.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BusinessTrips" Width="1.5" PointX="29.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CalendarDates" Width="1.5" PointX="29.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Categories" Width="1.5" PointX="29.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Classified_Categories" Width="1.5" PointX="30.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ClosedPeriods" Width="1.5" PointX="30.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CommentRead" Width="1.5" PointX="30.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Comments" Width="1.5" PointX="27.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ConnectionStrings" Width="1.5" PointX="29.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ContainerChecking" Width="1.5" PointX="31.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ContainerChecking_old20160121" Width="1.5" PointX="31.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ContractDetails" Width="1.5" PointX="11.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ContractEmployeeServices" Width="1.5" PointX="31.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Contracts" Width="1.5" PointX="9" PointY="41.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CRM_Meetings" Width="1.5" PointX="32.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CRM_Meetings_Users" Width="1.5" PointX="32.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CRM_Opportunities_bk20161102" Width="1.5" PointX="16.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CRM_OpportunityDetails" Width="1.5" PointX="32.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CRM_OpportunityServices" Width="1.5" PointX="32.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerAccounting" Width="1.5" PointX="31.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerBookings" Width="1.5" PointX="33.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerBookingTimeSlots" Width="1.5" PointX="12.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerCategories" Width="1.5" PointX="18.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerClients" Width="1.5" PointX="3" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerComplainDetails" Width="1.5" PointX="7.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerComplains" Width="1.5" PointX="20.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerContacts" Width="1.5" PointX="33.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerDispatchMethod" Width="1.5" PointX="33.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerEvents" Width="1.5" PointX="34.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerGroups" Width="1.5" PointX="34.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerHoldHistories" Width="1.5" PointX="34.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerProductGroups" Width="1.5" PointX="12.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerProperties" Width="1.5" PointX="34.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerRequirementProfiles" Width="1.5" PointX="34.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerRequirements" Width="1.5" PointX="27.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Customers" Width="1.5" PointX="0.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesContractDetails" Width="1.5" PointX="10.5" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesContracts" Width="1.5" PointX="8.25" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesInvoiceDetails" Width="1.5" PointX="15.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesInvoicePallets" Width="1.5" PointX="18" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesInvoices" Width="1.5" PointX="13.5" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesPromotionDetails" Width="1.5" PointX="25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesPromotionProducts" Width="1.5" PointX="27.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesPromotions" Width="1.5" PointX="22.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesTargetDetails" Width="1.5" PointX="35.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerSalesTargets" Width="1.5" PointX="35.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerServiceCosting" Width="1.5" PointX="5.25" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerServiceCostingDetails" Width="1.5" PointX="7.5" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerServices" Width="1.5" PointX="35.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CheckInOut" Width="1.5" PointX="29.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DailyCheckDetails" Width="1.5" PointX="30.5" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DailyChecks" Width="1.5" PointX="28.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DailyPrintedLunch" Width="1.5" PointX="35.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DailyTask" Width="1.5" PointX="31.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DailyWorks" Width="1.5" PointX="33.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DeletedDispatchingProducts" Width="1.5" PointX="35.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DepartmentCategories" Width="1.5" PointX="36.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Departments" Width="1.5" PointX="36.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DestinationPorts" Width="1.5" PointX="12.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DispatchingCartons" Width="1.5" PointX="36.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DispatchingLocations" Width="1.5" PointX="10.5" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DispatchingOrderDetails" Width="1.5" PointX="12.75" PointY="45.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DispatchingOrders" Width="1.5" PointX="3" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DispatchingPallets" Width="1.5" PointX="36.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DispatchingProducts" Width="1.5" PointX="5.25" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DispatchingSeals" Width="1.5" PointX="36.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DispatchingUnits" Width="1.5" PointX="37.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.dtproperties" Width="1.5" PointX="22.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EDI_Customers" Width="1.5" PointX="37.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EDI_DetailBreakdowns" Width="1.5" PointX="7.5" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EDI_OrderDetails" Width="1.5" PointX="5.25" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EDI_Orders" Width="1.5" PointX="3" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EDI_PackingList_Demo" Width="1.5" PointX="37.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EDI_tmpProductID" Width="1.5" PointX="24.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EDI_tmpProductRemains" Width="1.5" PointX="37.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EDI_tmpProductRemains_PickSequence" Width="1.5" PointX="37.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ElectricityConsumption" Width="1.5" PointX="37.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeAnnualHistories" Width="1.5" PointX="25.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeAreaResponsibities" Width="1.5" PointX="25.25" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeAreas" Width="1.5" PointX="38.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeHistory" Width="1.5" PointX="25.25" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeMovements" Width="1.5" PointX="38.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeOTLeaveRemainDaytmp" Width="1.5" PointX="38.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeOTSupervisors" Width="1.5" PointX="38.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeReminders" Width="1.5" PointX="26.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Employees" Width="1.5" PointX="23" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeesLunch" Width="1.5" PointX="0.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeWorkings" Width="1.5" PointX="25.25" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Equipments" Width="1.5" PointX="39.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Faxes" Width="1.5" PointX="14.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Feedbacks" Width="1.5" PointX="16.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_Companies" Width="1.5" PointX="15.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_ContInOut" Width="1.5" PointX="18.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_EmployeeBreakTimes" Width="1.5" PointX="2.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_EmployeeInOut" Width="1.5" PointX="25.25" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_Properties" Width="1.5" PointX="4.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_PropertyMovements" Width="1.5" PointX="39.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_TruckInOut" Width="1.5" PointX="39.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_TruckPowerKwh" Width="1.5" PointX="31.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_WorkerInOut" Width="1.5" PointX="33.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_WorkerLaborSafetyTraining" Width="1.5" PointX="20.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_WorkerRegularInOut" Width="1.5" PointX="20.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Gate_Workers" Width="1.5" PointX="18" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.GoodsReceived" Width="1.5" PointX="39.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.GoodsReceivedDetails" Width="1.5" PointX="40.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.GPSLocationTrackingHistory" Width="1.5" PointX="40.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_Gate_ContTruckInOut" Width="1.5" PointX="40.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.HitCounters" Width="1.5" PointX="11.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.HolidayDate" Width="1.5" PointX="28.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.HouseKeepingChecks" Width="1.5" PointX="41.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Inners" Width="1.5" PointX="20.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.InternalAuditDetails" Width="1.5" PointX="41.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.InternalAuditEmployees" Width="1.5" PointX="22.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.InternalAudits" Width="1.5" PointX="41.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.InventoryChecking" Width="1.5" PointX="41.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ISOOrders" Width="1.5" PointX="42.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.KPIDefinitions" Width="1.5" PointX="42.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.KPIRecordings" Width="1.5" PointX="42.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.LoadingReportDetails" Width="1.5" PointX="24.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.LoadingReports" Width="1.5" PointX="30.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Locations" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.LocationsHome" Width="1.5" PointX="42.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.LogRecords" Width="1.5" PointX="35.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.LunchPlaces" Width="1.5" PointX="37.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Messages" Width="1.5" PointX="39.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.MHLWorkDefinitions" Width="1.5" PointX="10.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.MHLWorkDetails" Width="1.5" PointX="15.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.MHLWorks" Width="1.5" PointX="13" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.MonthlyPayRollQuantity" Width="1.5" PointX="41.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.MonthlyPayRollSummary" Width="1.5" PointX="43.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.News" Width="1.5" PointX="43.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.NoteDetails" Width="1.5" PointX="26.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Notes" Width="1.5" PointX="43.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Notifications" Width="1.5" PointX="32.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OfficePhones" Width="1.5" PointX="43.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostDefinitions" Width="1.5" PointX="5.5" PointY="65.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostDetailByCustomers" Width="1.5" PointX="10" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostElectricityDetails" Width="1.5" PointX="10" PointY="64.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostElectricty" Width="1.5" PointX="7.75" PointY="64.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostLabourDetails" Width="1.5" PointX="10" PointY="71.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostLabours" Width="1.5" PointX="7.75" PointY="72" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostMonthlyDetails" Width="1.5" PointX="7.75" PointY="68" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostMonths" Width="1.5" PointX="5.5" PointY="68.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostNonlistedRates" Width="1.5" PointX="43.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperationCostMonthlyParameters" Width="1.5" PointX="7.75" PointY="75.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OrderCategories" Width="1.5" PointX="43.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OtherJobDefinitions" Width="1.5" PointX="44.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OtherJobs" Width="1.5" PointX="44.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OtherService" Width="1.5" PointX="3" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OtherServiceDetails" Width="1.5" PointX="5.25" PointY="45" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PalletCartons" Width="1.5" PointX="9.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PalletHoldings" Width="1.5" PointX="44.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Pallets" Width="1.5" PointX="7.5" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PalletStatus" Width="1.5" PointX="14.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PayRollDetails" Width="1.5" PointX="45.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PayRollEmployeeInvalid" Width="1.5" PointX="45.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PayRollGradedPayments" Width="1.5" PointX="45.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PayrollMonth" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PayrollMonthlyDetails" Width="1.5" PointX="45.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PayRollYear" Width="1.5" PointX="34.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Positions" Width="1.5" PointX="20.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PositionTrainingRequirements" Width="1.5" PointX="36.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ProblemCategories" Width="1.5" PointX="45.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Product824" Width="1.5" PointX="45.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ProductCategories" Width="1.5" PointX="46.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ProductChanging" Width="1.5" PointX="46.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ProductDamages" Width="1.5" PointX="11.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Products" Width="1.5" PointX="3" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Products_HN" Width="1.5" PointX="46.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Profiles" Width="1.5" PointX="46.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Projects" Width="1.5" PointX="38.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.PropertyDamages" Width="1.5" PointX="40.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.QAReport" Width="1.5" PointX="42.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.QAReportDetails" Width="1.5" PointX="13.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.QHSE" Width="1.5" PointX="15.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.QualityCheckingDetails" Width="1.5" PointX="20" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.QualityCheckings" Width="1.5" PointX="17.75" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.QuarantineDetails" Width="1.5" PointX="47.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Quarantines" Width="1.5" PointX="47.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ReceivingCartons" Width="1.5" PointX="20.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ReceivingOrderDetails" Width="1.5" PointX="5.25" PointY="57.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ReceivingOrders" Width="1.5" PointX="3" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ReceivingUnits" Width="1.5" PointX="47.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ReleaseDetails" Width="1.5" PointX="15" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Releases" Width="1.5" PointX="12.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Replenishments" Width="1.5" PointX="47.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Reports" Width="1.5" PointX="26.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ReportToCustomer" Width="1.5" PointX="47.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.RoomNumbers" Width="1.5" PointX="28.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Rooms" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Rooms_Locations" Width="1.5" PointX="30.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.SafetyStockReasonDefinitions" Width="1.5" PointX="47.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.SafetyStockReasons" Width="1.5" PointX="47.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.SafetyStocks" Width="1.5" PointX="47.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Schedules" Width="1.5" PointX="47.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ServicesDefinition" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ServicesDefinitionMeasures" Width="1.5" PointX="48.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Shifts" Width="1.5" PointX="26" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockMovementDetails" Width="1.5" PointX="25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockMovementMass" Width="1.5" PointX="48.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockMovements" Width="1.5" PointX="22.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StoredProcedureExecuteHistories" Width="1.5" PointX="48.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Stores" Width="1.5" PointX="32.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.sysdiagrams" Width="1.5" PointX="34.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.TaskHistories" Width="1.5" PointX="47.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Tasks" Width="1.5" PointX="49.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tblagjenda" Width="1.5" PointX="17.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Test" Width="1.5" PointX="49.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Test2" Width="1.5" PointX="49.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpAisles" Width="1.5" PointX="13.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingByOvertime" Width="1.5" PointX="49.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingByProducts" Width="1.5" PointX="49.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingCombined" Width="1.5" PointX="49.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingCustomerJoined" Width="1.5" PointX="49.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingCustomers" Width="1.5" PointX="49.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingCustomersContracts" Width="1.5" PointX="49.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingReport" Width="1.5" PointX="49.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingRunByDispatchingOrders" Width="1.5" PointX="50.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpBillingRunByReceivingOrders" Width="1.5" PointX="50.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpConsumables" Width="1.5" PointX="28.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpContainerChecking" Width="1.5" PointX="36.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpContainerChecking2016_01_26" Width="1.5" PointX="44.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpCustomerSalesInvoiceReprt" Width="1.5" PointX="51.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpDispatchingLocationBreak_bk2016_09_05" Width="1.5" PointX="51.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpDispatchingOrderDetailsBreak" Width="1.5" PointX="51.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpDispatchingOrders" Width="1.5" PointX="15.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpDispatchingProductExport" Width="1.5" PointX="30.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpDispatchingProducts" Width="1.5" PointX="51.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeInOutFinger" Width="1.5" PointX="32.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeLunch" Width="1.5" PointX="51.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeOTSupervisors" Width="1.5" PointX="51.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeWorkingDetailCheck_TotalPerday" Width="1.5" PointX="51.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeWorkingDetailCheck2011" Width="1.5" PointX="51.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeWorkingDetails" Width="1.5" PointX="46.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeWorkingPercentage" Width="1.5" PointX="51.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeWorkings" Width="1.5" PointX="52.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpFonterraBigC" Width="1.5" PointX="19.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpFreeLocations" Width="1.5" PointX="21.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpLocationCodes" Width="1.5" PointX="7.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpLocations" Width="1.5" PointX="38.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpLocForStockTake" Width="1.5" PointX="53.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpMETRORandomWeight" Width="1.5" PointX="53.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpMovementHistory" Width="1.5" PointX="53.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpNoteDispatchingOder" Width="1.5" PointX="53.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpNoteDispatchingOderDetail" Width="1.5" PointX="53.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpOrders" Width="1.5" PointX="53.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpPayRollAnnual" Width="1.5" PointX="53.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpPayrollMonthlyDetails" Width="1.5" PointX="53.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpPerformanceCheck" Width="1.5" PointX="40.75" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpProductRemains" Width="1.5" PointX="53.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpProducts" Width="1.5" PointX="53.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpProductsSQL" Width="1.5" PointX="51.75" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpPropertyI" Width="1.5" PointX="53.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpPropertyID" Width="1.5" PointX="54.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpPropertyMonthly" Width="1.5" PointX="54.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpPropertyU" Width="1.5" PointX="54.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpReceivingOrderDetails" Width="1.5" PointX="13.75" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpReceivingOrders" Width="1.5" PointX="15.75" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpReleaseSummary" Width="1.5" PointX="48.75" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpReportingServerMultiAttach" Width="1.5" PointX="55.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpResults" Width="1.5" PointX="55.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpRoomOccupancies" Width="1.5" PointX="55.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpRooms" Width="1.5" PointX="55.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpScheduled_JobWeeks" Width="1.5" PointX="55.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpStockCorrectionProducts" Width="1.5" PointX="23.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpStockOnHandByDate" Width="1.5" PointX="25.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpStockOnHandTop25Customers" Width="1.5" PointX="55.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.TrainingDefinitions" Width="1.5" PointX="27.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Trainings" Width="1.5" PointX="55.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Transaction" Width="1.5" PointX="32.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.TripDetails" Width="1.5" PointX="55.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Trips" Width="1.5" PointX="55.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.UserAccounts" Width="1.5" PointX="25.25" PointY="37.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.UserApplicationDefinitions" Width="1.5" PointX="55.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.UserApplications" Width="1.5" PointX="55.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.UserControllers" Width="1.5" PointX="55.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.UserGroupDefinitions" Width="1.5" PointX="53.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.UserGroups" Width="1.5" PointX="55.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.UserManagers" Width="1.5" PointX="56.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.UserSupervisors" Width="1.5" PointX="56.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.VietnameseStringError" Width="1.5" PointX="56.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Warehouses" Width="1.5" PointX="3.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Warnings" Width="1.5" PointX="12.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WavePickingDetails" Width="1.5" PointX="9.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WavePickings" Width="1.5" PointX="17.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WebUsers" Width="1.5" PointX="29.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WMS_Applications" Width="1.5" PointX="5.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WMS_Departments" Width="1.5" PointX="38.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WMS_Roles" Width="1.5" PointX="8" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WMS_UserApplicationRoles" Width="1.5" PointX="10.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WMS_UserApplications" Width="1.5" PointX="8" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WMS_Users" Width="1.5" PointX="5.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.WMSVersions" Width="1.5" PointX="40.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CRM_Opportunities" Width="1.5" PointX="42.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DeletedReceivingOrderDetails" Width="1.5" PointX="44.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ReportDates" Width="1.5" PointX="50.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.SafetyContacts" Width="1.5" PointX="57.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpAccounting_BillingContractNull" Width="1.5" PointX="14.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpAccounting_Revenues" Width="1.5" PointX="57.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpCustomerPallets" Width="1.5" PointX="57.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpCustomerSalesOrderUnitStandards" Width="1.5" PointX="19.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpChart" Width="1.5" PointX="57.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEDIDispatchingProducts" Width="1.5" PointX="57.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpElectrictyCost" Width="1.5" PointX="57.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpEmployeeWorkingInvalid" Width="1.5" PointX="57.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpLabels" Width="1.5" PointX="57.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpMETRORandomWeight2" Width="1.5" PointX="57.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpPayrollAnnualLeaveAll" Width="1.5" PointX="57.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpReceivingAdvices" Width="1.5" PointX="57.75" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpRepeatRows" Width="1.5" PointX="58.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpStockOnHandDailyLocationMoreThan1Customer" Width="1.5" PointX="58.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpStockOnHandWeekly" Width="1.5" PointX="58.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpTaskBackUp" Width="1.5" PointX="31.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.tmpTop40Customers" Width="1.5" PointX="33.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_BillingContractDetails" Width="1.5" PointX="35.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_BillingCheck" Width="1.5" PointX="52.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_BillingLast30days" Width="1.5" PointX="54.75" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_Contracts" Width="1.5" PointX="59.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_CustomerOverTimeCheck" Width="1.5" PointX="59.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_CheckEmployeePayroll" Width="1.5" PointX="21.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_Employees" Width="1.5" PointX="23.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_EmployeeWorkingCheckers" Width="1.5" PointX="59.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_EmployeeWorkingMonthly" Width="1.5" PointX="25.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_GoodsReceived" Width="1.5" PointX="59.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_PalletInventory" Width="1.5" PointX="59.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_PayrollMonthlyDetailFull" Width="1.5" PointX="59.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_PettyCash" Width="1.5" PointX="37.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_PurchasingOrders" Width="1.5" PointX="39.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_PurchasingOrders_bk2015_01_28" Width="1.5" PointX="44.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_Revenues" Width="1.5" PointX="59.75" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_Revenues_AllCustomers" Width="1.5" PointX="46.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_Revenues_ServicePrice_AllCustomers" Width="1.5" PointX="59.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_Revenues_Top10" Width="1.5" PointX="56.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_Revenues_Top10_Weight" Width="1.5" PointX="59.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Accounting_RevenuesLastMonth" Width="1.5" PointX="60.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Admin_Difference_AD_Current" Width="1.5" PointX="60.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.AirTemperature" Width="1.5" PointX="16.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Analysis_StockOnHandWeekly" Width="1.5" PointX="18.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.BillingDetailBreakDown" Width="1.5" PointX="27.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.CustomerListBillings" Width="1.5" PointX="48.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.DSCartonStockOnHandDaily" Width="1.5" PointX="58.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.EmployeeInOutDisplay" Width="1.5" PointX="60.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_DispatchingLocations" Width="1.5" PointX="61.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_DispatchingOrderDetails" Width="1.5" PointX="12.75" PointY="64.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_DispatchingOrders" Width="1.5" PointX="61.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_DispatchingProducts" Width="1.5" PointX="61.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_EmployeeWorkings" Width="1.5" PointX="61.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_Pallets" Width="1.5" PointX="61.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_Products" Width="1.5" PointX="61.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_ReceivingOrderDetails" Width="1.5" PointX="61.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.History_ReceivingOrders" Width="1.5" PointX="61.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostCustomerIntensity" Width="1.5" PointX="61.75" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostCustomerMainList" Width="1.5" PointX="61.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostEmployeeProductivity" Width="1.5" PointX="0.75" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostStockOnHandAvgByRoom" Width="1.5" PointX="2.75" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperatingCostVehicleInOutRunningTime" Width="1.5" PointX="62.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperationCostBlastFreezing" Width="1.5" PointX="33.75" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.OperationCostNominalRates" Width="1.5" PointX="54.75" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.Properties" Width="1.5" PointX="62.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.SOLOMON_ContractDetails" Width="1.5" PointX="63.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.SOLOMON_ServicesDefinition" Width="1.5" PointX="63.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockOnHandDaily" Width="1.5" PointX="63.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockOnHandDailyDetailPallets" Width="1.5" PointX="63.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockOnHandDailyDetails" Width="1.5" PointX="18.75" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockOnHandDailyDetailsByRoom" Width="1.5" PointX="63.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockOnHandDailyInOut" Width="1.5" PointX="63.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockOnHandWeekly" Width="1.5" PointX="29.75" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.StockOnHandWeeklyDetails" Width="1.5" PointX="63.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewAllCustomersInout" Width="1.5" PointX="63.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewAnnualLeaveByEmployee" Width="1.5" PointX="63.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewBarcodeScanDOnotDone" Width="1.5" PointX="63.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewConfirmationAll" Width="1.5" PointX="63.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewConfirmationAllUnion" Width="1.5" PointX="46.75" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewContractsAllCustomers" Width="1.5" PointX="48.75" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewCustomerSalesInvoices" Width="1.5" PointX="63.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewCustomerSalesInvoices3PL" Width="1.5" PointX="56.75" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewCustomerSalesInvoices3PL_Details" Width="1.5" PointX="58.75" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewDHLMcDonaldDispatchingPlan" Width="1.5" PointX="64.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewDispatchingProduct" Width="1.5" PointX="9.75" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewDispatchingProductsDelete" Width="1.5" PointX="14.75" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewDispatchingQtyAverage30days" Width="1.5" PointX="35.75" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewEmployeeEventLast30days" Width="1.5" PointX="41.75" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewEmployeeInOutRemain" Width="1.5" PointX="50.75" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewEmployees" Width="1.5" PointX="64.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewEmployeeTrainingManagement" Width="1.5" PointX="64.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewEmployeeWorkingLast45days" Width="1.5" PointX="65.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewEmployeeWorkingSupervisor" Width="1.5" PointX="65.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewEmployeeWorkingTotal" Width="1.5" PointX="11.75" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewEmployeeWorkingTotalPercentage" Width="1.5" PointX="65.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFonterraBigCDispatchingDetailsUsedByDate" Width="1.5" PointX="65.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFonterraCustomerClients" Width="1.5" PointX="65.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFonterraDispatchingOrdersToday" Width="1.5" PointX="65.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFonterraQA" Width="1.5" PointX="25.75" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFonterraSales60days" Width="1.5" PointX="65.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFonterraSalesContractDetails" Width="1.5" PointX="65.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFonterraStockOnHandOnHold" Width="1.5" PointX="65.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFreeLocations" Width="1.5" PointX="65.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewFreeLocationsFloor" Width="1.5" PointX="65.75" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewfrmFreeLocations" Width="1.5" PointX="52.75" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewGate_WorkerLaborSafetyTraining" Width="1.5" PointX="65.75" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewHaiNamProductList" Width="1.5" PointX="60.75" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewHandlingOvertimeCheck" Width="1.5" PointX="2.75" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewHomeLocationByRoom" Width="1.5" PointX="66.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewInternalAudit" Width="1.5" PointX="27.75" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewLocationBarcode" Width="1.5" PointX="29.75" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETPalletConsolidationOtherCustomers" Width="1.5" PointX="37.75" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETROCalculateWeightAnnimalControl" Width="1.5" PointX="43.75" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETRODispatchingCartons" Width="1.5" PointX="66.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETROLabelDispatchingOrders" Width="1.5" PointX="66.75" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETROOrderConfirmTime" Width="1.5" PointX="67.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETROPalletConsolidation" Width="1.5" PointX="67.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETROPalletConsolidationOtherCustomers" Width="1.5" PointX="13.75" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETROPalletOnHandDaily" Width="1.5" PointX="67.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETROPalletOnHandDailyBilling" Width="1.5" PointX="15.75" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMetroStockByLocationOnHand" Width="1.5" PointX="67.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMETROStockOnHandForQA" Width="1.5" PointX="20.75" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewMinhPhuCheckingOverTime" Width="1.5" PointX="22.75" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewOutsourcedJob60days" Width="1.5" PointX="67.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewPallet_DoulicateTest" Width="1.5" PointX="67.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewPalletAllocationFree" Width="1.5" PointX="31.75" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewPalletRemainWeightInners" Width="1.5" PointX="67.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewPayrollMonthlyDetails" Width="1.5" PointX="67.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewPayrollMonthlyReview" Width="1.5" PointX="67.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewPizzaHutDispatchingLabel" Width="1.5" PointX="62.75" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewProductMain" Width="1.5" PointX="68.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewProductMainGroup" Width="1.5" PointX="17.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewPropertyMovements" Width="1.5" PointX="33.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewQHSELatestComment" Width="1.5" PointX="45.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewqryComboCustomerID" Width="1.5" PointX="52.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewRandomWeightPallets" Width="1.5" PointX="68.75" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewSafetyStockReason" Width="1.5" PointX="54.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewStockOnHandByLotAllCustomers" Width="1.5" PointX="56.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewStockOnHandByWarehouse" Width="1.5" PointX="68.75" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewStockOnHandInPalletUnitWeight" Width="1.5" PointX="68.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalByLocation" Width="1.5" PointX="68.75" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalDispatchingLocations" Width="1.5" PointX="68.75" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalDispatchingOrderDetails" Width="1.5" PointX="69.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalDispatchingOrders" Width="1.5" PointX="69.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalDispatchingProducts" Width="1.5" PointX="69.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalPallets" Width="1.5" PointX="69.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalReceivingOrderDetails" Width="1.5" PointX="69.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalReceivingOrders" Width="1.5" PointX="69.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalStockRemain" Width="1.5" PointX="69.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTotalUnit_Out" Width="1.5" PointX="69.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTuPhuongNumberOfReceivedLocations" Width="1.5" PointX="69.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTuPhuongNumboerOfLocations" Width="1.5" PointX="69.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTuPhuongReceivingPallets" Width="1.5" PointX="47.75" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewTripDispatchingPlan" Width="1.5" PointX="49.75" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewUnileverDailyLabellingPlan" Width="1.5" PointX="69.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewUnileverOrderstoBigC" Width="1.5" PointX="58.75" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewVinmartDispatchingOrdersToday" Width="1.5" PointX="64.75" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewVinmartInout" Width="1.5" PointX="70.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SwireDBModel.ViewWallPickingList" Width="1.5" PointX="29.75" PointY="73.75" IsExpanded="true" />
+        <AssociationConnector Association="SwireDBModel.FK_Aisles_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_BillingDetails_Billings" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_BillingDetails_ServicesDefinition" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Billings_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_BillingSummaryDetails_BillingSummary" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_BillingSummaryDetails_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_BlastFreezerDetails_BlastFreezers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_ContractDetails_Contracts" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_ContractDetails_ServicesDefinition" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerClients_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesContracts_CustomerClients" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesInvoices_CustomerClients" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerComplainDetails_CustomerComplainDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_ReleaseDetails_CustomerProductGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesContracts_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DispatchingOrders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_EDI_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperatingCostDetailByCustomers_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OtherService_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_ReceivingOrders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesContractDetails_CustomerSalesContracts" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesInvoices_CustomerSalesContracts" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesInvoiceDetails_CustomerSalesInvoices" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesInvoicePallets_CustomerSalesInvoiceDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesPromotionDetails_CustomerSalesPromotions" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerSalesPromotionProducts_CustomerSalesPromotionDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerServiceCosting_ServicesDefinition" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_CustomerServiceCostingDetails_CustomerServiceCosting" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DailyCheckDetails_DailyChecks" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DailyChecks_Employees1" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DailyChecks_Shifts" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DispatchingLocations_DispatchingProducts" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DispatchingLocations_Locations" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DispatchingOrderDetails_DispatchingLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DispatchingOrderDetails_Pallets" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_DispatchingProducts_DispatchingOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_EDI_DetailBreakdowns_EDI_OrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_EDI_OrderDetails_EDI_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_EmployeeAnnualHistories_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_EmployeeAreaResponsibities_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_EmployeeHistory_Employees1" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Employees_Positions" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_EmployeeWorkings_Employees1" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Gate_EmployeeInOut_Employees1" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_UserAccounts_Employees1" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Gate_Workers_Gate_Companies1" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Gate_WorkerLaborSafetyTraining_Gate_Workers" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Gate_WorkerRegularInOut_Gate_Workers1" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Locations_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_MHLWorks_MHLWorkDefinitions" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_MHLWorkDetails_MHLWorks" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_MHLWorks_PayrollMonth" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperatingCostMonthlyDetails_OperatingCostDefinitions" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperatingCostDetailByCustomers_OperatingCostMonthlyDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperatingCostElectricityDetails_OperatingCostElectricty" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperatingCostElectricty_OperatingCostMonths" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperatingCostLabourDetails_OperatingCostLabours" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperatingCostLabours_OperatingCostMonths" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperatingCostMonthlyDetails_OperatingCostMonths" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OperationCostMonthlyParameters_OperatingCostMonths" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OtherServiceDetails_OtherService" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_OtherServiceDetails_ServicesDefinition" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Pallets_ReceivingOrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_QualityCheckingDetails_QualityCheckings" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_ReceivingOrderDetails_ReceivingOrders1" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_ReleaseDetails_Releases" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_Rooms_Warehouses" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_StockMovementDetails_StockMovements" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_WMS_UserApplications_WMS_Applications" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_WMS_UserApplicationRoles_WMS_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_WMS_UserApplicationRoles_WMS_UserApplications" ManuallyRouted="false" />
+        <AssociationConnector Association="SwireDBModel.FK_WMS_UserApplications_WMS_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SwireDBModel.WMS_tmpUpdateRODO" Width="1.5" PointX="16.375" PointY="0.75" />
+        <EntityTypeShape EntityType="SwireDBModel.UserRoleDefinition" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SwireDBModel.UserFunctionDefinition" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="SwireDBModel.UserActionDefinition" Width="1.5" PointX="15.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

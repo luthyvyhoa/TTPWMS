@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+    <PublishUrlHistory>ftp://10.0.41.15/Setups/TWMS/|.3xZXZXzZXZX\|ftp://10.0.41.15/Setups/TWMS_TEST/|ftp://10.0.41.15/NECS Share/Setups/TWMS/|ftp://125.212.248.71/Setup/WMS_TKM/</PublishUrlHistory>
+    <InstallUrlHistory>http://10.0.41.15/TWMS/|http://10.0.41.15/TWMS_TEST/|http://10.0.41.15/WMS_TKM/|http://125.212.248.71/WMS_TKM/|http://125.212.248.71:6666/WMS_TKM/</InstallUrlHistory>
+    <SupportUrlHistory>http://ttpsolutions.com.vn</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory>http://ttpsolutions.com.vn</ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

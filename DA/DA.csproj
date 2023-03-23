@@ -1,0 +1,2960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD604E9A-AC4E-4C84-85CE-8DA3F97DB4D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DA</RootNamespace>
+    <AssemblyName>DA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TWMS_key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v19.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v19.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Utils.v19.1.UI">
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v19.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v19.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v19.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.1">
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aisles.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="API\CarInfo.cs" />
+    <Compile Include="API\CarSignal.cs" />
+    <Compile Include="API\ActionableCard.cs" />
+    <Compile Include="API\Navi_ACKRespond.cs" />
+    <Compile Include="API\UserInfo.cs" />
+    <Compile Include="Assignment.cs" />
+    <Compile Include="AssignmentEmployees.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Attachments.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillingConfirmDiscount.cs" />
+    <Compile Include="BillingDetailBreakDown.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillingDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillingInvoice.cs" />
+    <Compile Include="BillingInvoiceDetail.cs" />
+    <Compile Include="Billings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillingSummary.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillingSummaryDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlastFreezerDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlastFreezers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessTripPrices.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessTrips.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClosedPeriods.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContractAccountingStatu.cs" />
+    <Compile Include="ContractCommitments.cs" />
+    <Compile Include="ContractDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContractEmployeeServices.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\OperatingCostInsertDetails.cs" />
+    <Compile Include="CRM_Opportunities.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_OpportunityDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_OpportunityServices.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerBookingDetails.cs" />
+    <Compile Include="CustomerBookings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCategories.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerClients.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerComplainDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerContacts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDeliveryRoute.cs" />
+    <Compile Include="CustomerDispatchMethod.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEvents.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForecast.cs" />
+    <Compile Include="CustomerForecastDetail.cs" />
+    <Compile Include="CustomerInquiry.cs" />
+    <Compile Include="CustomerInquiryDetail.cs" />
+    <Compile Include="CustomerInquiryProduct.cs" />
+    <Compile Include="CustomerInquiryProductDefinition.cs" />
+    <Compile Include="CustomerInquiryService.cs" />
+    <Compile Include="CustomerInquiryServiceDefinition.cs" />
+    <Compile Include="CustomerKPIRecording.cs" />
+    <Compile Include="CustomerList.cs" />
+    <Compile Include="CustomerLocationBooking.cs" />
+    <Compile Include="CustomerPalletStatu.cs" />
+    <Compile Include="CustomerProductGroups.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProperties.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerQuotation.cs" />
+    <Compile Include="CustomerQuotationDetail.cs" />
+    <Compile Include="CustomerRequirements.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSalesContractDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSalesContracts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSalesInvoiceDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSalesInvoicePallets.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSalesInvoices.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSalesPromotionDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSalesPromotionProducts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSalesPromotions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerServiceCosting.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerServiceCostingDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerServiceOrder.cs" />
+    <Compile Include="CustomerSupplier.cs" />
+    <Compile Include="DailyCheckDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DailyChecks.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DailyTask.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess.cs" />
+    <Compile Include="DeliveryOrder.cs" />
+    <Compile Include="DeliveryOrderDetail.cs" />
+    <Compile Include="DeliveryStatusDefinition.cs" />
+    <Compile Include="Departments.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiscountCooperations.cs" />
+    <Compile Include="Discounts.cs" />
+    <Compile Include="DispatchingLocations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchingOrderDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchingProducts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DVTQuyCach.cs" />
+    <Compile Include="EDI_DetailBreakdowns.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDI_OrderDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDI_Orders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElectricityConsumption.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAnnualHistories.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAreaResponsibities.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAreas.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeChangeHistory.cs" />
+    <Compile Include="EmployeeEducation.cs" />
+    <Compile Include="EmployeeHistory.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeKPICategory.cs" />
+    <Compile Include="EmployeeKPIDefinition.cs" />
+    <Compile Include="EmployeeKPIPosition.cs" />
+    <Compile Include="EmployeeKPIRecord.cs" />
+    <Compile Include="EmployeeKPITarget.cs" />
+    <Compile Include="EmployeeList.cs" />
+    <Compile Include="EmployeeMHLEntry.cs" />
+    <Compile Include="EmployeeOTLeaveRemainDaytmp.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeOTSupervisors.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeReminders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeRequest.cs" />
+    <Compile Include="EmployeeRequestType.cs" />
+    <Compile Include="Employees.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSafetyTeam.cs" />
+    <Compile Include="EmployeeWorkings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLogs.cs" />
+    <Compile Include="ExCustomerClientRule.cs" />
+    <Compile Include="FileProcess.cs" />
+    <Compile Include="Gate_Companies.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gate_EmployeeInOut.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gate_Properties.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gate_PropertyMovements.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gate_TruckInOut.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gate_WorkerLaborSafetyTraining.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gate_WorkerRegularInOut.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gate_Workers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InternalAuditDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InternalAuditEmployees.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InternalAudits.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JsonObjects\MsTeamCardView.cs" />
+    <Compile Include="KPIDefinitions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KPIRecordings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingReportDetail.cs" />
+    <Compile Include="LoadingReports.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LocationList.cs" />
+    <Compile Include="Locations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LocationsHome.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LunchPlaces.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AdvanceDetail.cs" />
+    <Compile Include="Management\PalletStatusChangeDetails.cs" />
+    <Compile Include="Management\ExpenseDetail.cs" />
+    <Compile Include="Management\ManualInvoices.cs" />
+    <Compile Include="Management\PalletStatusChanges.cs" />
+    <Compile Include="Management\PettyCash.cs" />
+    <Compile Include="Management\PettyCashDetails.cs" />
+    <Compile Include="Management\ProductCheckings.cs" />
+    <Compile Include="Management\PurchaseOrder.cs" />
+    <Compile Include="Management\PurchasingOrderDetail.cs" />
+    <Compile Include="Management\SafetyClotheDetail.cs" />
+    <Compile Include="Management\SafetyClothes.cs" />
+    <Compile Include="Master\CustomerDA.cs" />
+    <Compile Include="Master\DispatchingProductsDA.cs" />
+    <Compile Include="Master\ProductDA.cs" />
+    <Compile Include="MHLWorkDefinitions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MHLWorkDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MHLWorks.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyPayRollSummary.cs" />
+    <Compile Include="News.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NoteDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Notes.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostDefinitions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostDetailByCustomers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostElectricityDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostElectricty.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostLabourDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostLabours.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostMonthlyDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostMonths.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostNonlistedRates.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostStockOnHandAvgByRoom.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperatingCostVehicleInOutRunningTime.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperationCostBlastFreezing.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperationCostMonthlyParameters.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperationCostNominalRates.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCategories.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OtherJobDefinitions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OtherJobs.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OtherService.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OtherServiceDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PalletCartons.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PalletHoldings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pallets.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PalletStatus.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayRollDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayRollEmployeeInvalid.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayRollGradedPayments.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollMonth.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollMonthlyDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayRollYear.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Positions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PositionTrainingRequirements.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemCategories.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product824.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategories.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductChanging.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDamages.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductList.cs" />
+    <Compile Include="ProductMeasure.cs" />
+    <Compile Include="ProductPackage.cs" />
+    <Compile Include="Products.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Products_HN.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTransformation.cs" />
+    <Compile Include="ProductTransRecord.cs" />
+    <Compile Include="ProductTransRecordDetail.cs" />
+    <Compile Include="Profiles.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyDamages.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAReport.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAReportDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QCMaster.cs" />
+    <Compile Include="QCSP.cs" />
+    <Compile Include="QHSE.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QHSE_EquipmentCategories.cs" />
+    <Compile Include="QHSE_Equipments.cs" />
+    <Compile Include="QualityCheckingDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QualityCheckings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuarantineDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Quarantines.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivingCartons.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivingOrderDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivingUnits.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Releases.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Replenishments.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDates.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportToCustomer.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BillingReportXML.cs" />
+    <Compile Include="RoomNumbers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms_Locations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SafetyContacts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SafetyStockReasonDefinitions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SafetyStockReasons.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SafetyStocks.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Schedules.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesDefinition.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesDefinitionMeasures.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shifts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SOLOMON_ContractDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SOLOMON_ServicesDefinition.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPLoadLocationBooking_Result.cs" />
+    <Compile Include="SP_LoadContractCommitData.cs" />
+    <Compile Include="STAndroid_StockMovement_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAndroid_StockOnHandByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAndroid_StockOnHandDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAndroid_StockOnHand_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAndroid_UserManagement_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAndroid_WHCVersion_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAttachmentView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBarcodeScan_Label1DO_Test_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBarcodeScan_OrderDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBarcodeScan_Orders_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBarcodeScan_Order_Results_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingByOvertimeDetailReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingByOvertimeReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingChecking_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingConfirmationCombinedBiilingNo_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingConfirmationCombinedDetailReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingConfirmationCombinedReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingDetailBreakDownSendEmail_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingDetailLastMonth_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingDetailNoFee_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingDetailsPowerForRefContainers_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingInvoice_E_Details_Result.cs" />
+    <Compile Include="STBillingInvoice_E_Header_Result.cs" />
+    <Compile Include="STBillingLessThan3days_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingRunByDispatchingOrdersDOList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingRunByReceivingOrdersROList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingRunCustomerList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingRunfrmBillingDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBillingSummaryByServiceBefore_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STBusinessTripReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboCustomerIDMetro_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboCustomerIDNoChangeHome_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboCustomerIDProperties_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboCustomerID_Main_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboCustomerID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboCustomerMainID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboDepartmentID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboDockDoorID_Result.cs" />
+    <Compile Include="STcomboEmployeeID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboEmployeeOT_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboLocationIDDOProductsLO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboLocationIDDOProductsRO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboLocationIDFreeFloor_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboLocationIDFree_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboLocationIDHome_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboLocationIDPicking_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboLocationID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboOrderCategories_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboOrderCategory_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboPositionID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboProductIDDO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboProductIDList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboProductIDROSearch_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboProductIDRO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboProductIDSameWeight_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboProductID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboProductTrans_Result.cs" />
+    <Compile Include="STComboServiceContractDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboServiceOvertime_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STcomboStoreID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STComboTrainingRequirements_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCompareDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STConfirmationAll_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STConfirmationByUser_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STContainerCheckingHistories_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STContainerCheckingReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STContainerCheckingView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerAddressRoutes_Result.cs" />
+    <Compile Include="STCustomerBookingByTimeSlotChart_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerBookingByTimeSlot_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerBookingCalendarWeek_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerBookingDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerBookings_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerBookingTimeSlots_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerBookingViewByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerClients_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerComplainReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerEvaluationAndAnalyzingABA_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerEvaluationAndAnalyzingOS_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerEvaluationAndAnalyzingSummary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerEvaluationAndAnalyzing_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerEventReport_New_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerForecastCurrentMonth_Result.cs" />
+    <Compile Include="STCustomerForecastHistoryData_Result.cs" />
+    <Compile Include="STCustomerRequirementPrint_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomerRequirements_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STCustomersActive_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDailyScheduledJob_NoteDetails_bk20161025_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDeletedOrderView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDestinationPorts_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDifferenceCheck2_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDifferenceCheck_CurrentQtyByPalletID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingCartons_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingLocationAtDispatch_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingNote_Client_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingNote_Client_Trip_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingNote_OldDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingNote_Pcs_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingPlanAisleList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingPlanManyOrderReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingPlanReportNew_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingPlanReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingPlanRoomList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductByStatus_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductNewAllFilter_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductNewAllListProductByPallet_Result.cs" />
+    <Compile Include="STDispatchingProductNewAllListProducts_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductNewFilter_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductNewListRO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductSelectLocation_ExpDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductSelectLocation_Filter_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductSelectLocation_Location_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductSelectLocation_Order_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductSelectLocation_Pallet_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductSelectLocation_ProDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDispatchingProductViewWeightInners_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STDoorDetailsFind_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEDI_comboCustomerMainID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STElectricityConsumption_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeAll_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeAreasBarcode_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeCurrentInWharehouse_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeEvaluationAnnual_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeEventViewByEmployee_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeEventView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeFamilyMembers_Result.cs" />
+    <Compile Include="STEmployeeHistoryAnnualViewByEmployee_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeHistoryViewByEmployee_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeKPITargetAll_Result.cs" />
+    <Compile Include="STEmployeeLunchReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeLunchSummaryReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeLunch_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeOTSummaryByDept_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeOTView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingAdvanceList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingByJobCrosstapReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingByJobCrosstapReport_SendEmail_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingCheckOverTime_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingCheckPercent_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingDetailByServices_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingDetailGeneralHands_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingDetailHandlingByEmployee_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingDetailOrderWeightByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingDetailOverTimes_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingDetailsByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingFilter_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingInvalidDO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingInvalidRO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingPerformanceAnalyzing_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingProductionQtyCheck_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingProductionQtySummaryCheck_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingViewByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEmployeeWorkingView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STExCustomerClientRuleLoad_Result.cs" />
+    <Compile Include="STFindLocation_LocationDetails_Flag0_Result.cs" />
+    <Compile Include="STFindLocation_LocationDetails_Flag3_Result.cs" />
+    <Compile Include="STFindLocation_LocationDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STFreeLocationsFinal_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STFreeLocations_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ComboWorkerID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_Companies_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutPowerServiceByCustomerReport_New_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutPowerServiceByCustomerReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutPowerServiceReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutRecent_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutRemain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutToAllBill_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutToBilled_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutToCalculated_ByCustomerID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutToCalculated_ByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutToCalculated_ByGate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutToCalculated_ByTruckOrCont_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_ContInOutToUnBill_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_CustomerID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeBreakTime_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutByDateWMS_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutByEmployee_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutByGateNo1_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutByGateNo2_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutFingerSelect_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutIncorrect_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutRecent_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_EmployeeInOutRemain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_HistoryContTruckInOut_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_METROComboTruckInOutToday_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_METROComboTruckInOut_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_METROTruckInOutFDTD_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_METROTruckInOutRemain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_PropertyInOutAll_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_PropertyInOutByCustomerID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_PropertyInOutByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_PropertyInOut_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_PropertyMovementReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_PropertyReview_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutByDate_Metro_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutByGateNo1_Dock_bk20170218_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutByGateNo1_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutByGateNo2_Dock_bk20170218_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutByGateNo2_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutByGateNo_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutFDTDByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutFDTDSortByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutFDTD_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutPower_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutRecent_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_TruckInOutRemain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_VehicleBound_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_VehicleInOutRemainByGate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_VehicleInOutRemain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_VehicleInOutToday_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_VehicleInOut_Find_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_VehicleStartTimeChecking_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerInOutByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerInOutRecent_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerInOutRemain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerRegularAll_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerRegularInOutByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerRegularInOutByWorkerID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerRegularInOutRecent_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerRegularInOutRemain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STGate_WorkerRegularReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STIndependentCheckDODate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STIndependentCheckReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewAllRODO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_Main_Empty_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_Main_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_Main_Time_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_Main_Unfinished_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_Me_0_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_Me_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_R_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_T_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewDO_W_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewRO_Carton_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewRO_Main_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewRO_Me_0_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewRO_Me_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewRO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewRO_R_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewRO_T_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewRO_W_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutViewSummary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutView_Booking_DO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutView_Details_Hide_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STInOutView_Details_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STISOQuantityOfRecordRODO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STKPIDataEmployees_tmp_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STKPIDataSummary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STKPIRecordingReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabel1Label_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabel1Location_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabel1ReceivingOrderDetail_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabel1RO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabelAllRemainByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabelDispatchedCartons_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabelPalletCartonID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabelPickingSlipManyOrders_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabelRemainPickingSlip_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLabel_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLoadingReportGroupByExpDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLoadingReports_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLocationByRoomReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLocationFind_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STLocationProblem_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkByJobReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkComboJob_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkComboMonth_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkEmployeeDetail_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkEmployeeSalary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkEmployeeSummary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkPalletRepairComparisonReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkRecording_PalletRepairReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkReview_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkSummaryYearlyReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMHLWorkTheSameTime_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STMonthlyLunchSummary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STNFC_comboCustomerClientID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STNFC_comboProductIDSalesContract_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STNFC_comboProductID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STNFC_CustomerSalesDeliveryNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STNFC_CustomerSalesInvoiceDailyReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STNFC_CustomerSalesInvoiceReport_new_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STNFC_CustomerSalesInvoiceReview_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STNFC_CustomerSalesInvoicesPalletViewAll_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockMovementDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockMovementMass.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockMovements.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockOnHandDaily.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockOnHandDailyDetailPallets.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockOnHandDailyDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockOnHandDailyDetailsByRoom.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockOnHandDailyInOut.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockOnHandWeekly.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockOnHandWeeklyDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockMovementDA.cs" />
+    <Compile Include="Stock\StockOnHandOneCustomerDA.cs" />
+    <Compile Include="Stock\STStockByLocationReport.cs" />
+    <Compile Include="STOperationInOutSummaryByMonthReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOrderUnlockedSearch_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOrderUnlockedView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedureExecuteHistories.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stores.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOtherJobNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOtherJobSummary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOtherJobTheSameTime_2014_10_30_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOtherServiceViewByService_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOtherService_OtherJobs_Explanation_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOtherService_Work_Explanation_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STOtherService_Work_Mapping_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletAllocation1RO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletAllocationAll_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletAllocationBusy_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletAllocationDeep3_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletAllocationFindAisles_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletAllocationFreeHigh_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletAllocationFreeLow_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletAllocationFree_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletHistories_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletIDInOutDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfoAll1Customer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInformationByProduct_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInforReportBeforeDispatch_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInforReportHistory_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInforReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfo_DO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfo_LocationsWeightInners_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfo_Locations_Find_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfo_Locations_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfo_RODO_Find_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfo_RO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfo_ViewWeightInnersDO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInfo_ViewWeightInnersRO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPalletInOutHistories__bk_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayrollAnnualLeaveByDepartment_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayrollAnnualSummaryReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollDetailNightShiftUpdate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollDetailsCalculateTimeWork_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthIDList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyBirthdayReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyByDateReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayrollMonthlyDetailProblems_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyDetailReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayrollMonthlyEvaluationEvents_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayrollMonthlyEvaluation_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyOverTimeInvalid_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyPerformanceAverage_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyPerformanceChart_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayrollMonthlyProblemCheck_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyRecordings_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlyRewardPunishReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollMonthlySum_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollOverTimeSummaryReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayRollStockMovementRecordings_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPayrollSummaryByMonth_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPickingSlipManyOrderReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPickingSlipOldOrders_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPickingSlipReplenishment_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPickingSlipWithPalletID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPickingSlip_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblemIdentification_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblem_AvailableConfirm_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblem_CustomerComplainReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblem_DataRaw_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblem_InternalAuditReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblem_ProductDamageNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblem_ProductDamageReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblem_ReviewByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProblem_SummaryByMonthCrosstapReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProductChangingSearch_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProductChanging_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProductDamageReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProductDeleteRODOListProducts_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProductTracingCustomerDetails_Result.cs" />
+    <Compile Include="STProductTracingReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProductTracingRODetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STProductTracingRO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STPropertyRemainByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STQADetailWeeklyReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STQARecorderReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STQAWeeklyReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STQuarantineNewProduct_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STQuarantineNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STQuarantineReleaseReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReceivingAdvice_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReceivingCartonReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReceivingNoteByCarton_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReceivingNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReceivingOrderDetailView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReceivingOrders_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReceivingPalletCartonBarcode_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReleaseByDateDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReleaseByDateSummary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReleaseNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STReleaseStockMovement_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STRoomByEmployee_Result.cs" />
+    <Compile Include="STRoomEmployeeSetup_Result.cs" />
+    <Compile Include="STRooms_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STSafetyClothesRecordingsReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STSafetyDaysWithoutAccident_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STSafetyRackingByLocation1HighGross_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STSafetyStockWarning_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_BigC_DeliveryOrders_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_ComboEquipmentID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_DispatchingNoteOldDetail_Client_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_DispatchingNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_LandingReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_ReceivingNote_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockByLocationDetailReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockDispatchedDetailReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockDispatchedReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockOnHandByExpiryWarningByCustomerMain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockOnHandByExpiryWarning_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockOnHandByLotAvailable_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockOnHandByLotFonterra_bk20151202_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockOnHandByLotReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockReceivedReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_StockReceived_DateExpiry_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STScheduled_SummaryNoteDetail_Main_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STSearchAllDatabaseByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STSearchAllDatabase_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockByLocationDeep3Report_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockByLocationGrossWeightReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockByLocationReplenishmentReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockByLocationReportByHeight_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockByLocationReportHistoryBydate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockByLocationReportLowHigh_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockByRoomReport1Customer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockDispatchedByClientByCartonEmails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockDispatchedByReceivingOrder_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementByProductListProducts_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementMassOrderList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReport1CustomerAllProducts_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReport1CustomerProductMain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReport1Customer_old20170208_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReport1Customer_old_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReport1Customer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReportAllChanges_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReportAllCustomers_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReviewByDate_Customer_Result.cs" />
+    <Compile Include="STStockMovementReviewByDate_ProductLocation_Result.cs" />
+    <Compile Include="STStockMovementReviewByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReviewByEmployeeID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementReview_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementViewDetails_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockMovementView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOneLocationReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandAllCustomersDaily_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandAllCustomersW_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandAllCustomers_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByAgeByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByAgeSummary_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByCustomerOnHoldQuaratined_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByCustomerOnHold_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByDateAllCustomers_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByLotFindReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByLotListProducts_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByProDateByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByProductAllCustomerByExpiry_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByRoom1CustomerMain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByRoom1Customer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandByRoom_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandOneCustomerMain_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandOneCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockOnHandProductsFound_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockTakeByRequestManyDeep2_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockTakeDailyCheckJoinedPallets_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockTakeDailyCheckSplitPalletReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockTakeDailyCheck_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockTakeZeroByRoom_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STStockTakeZero_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STSundayWorkingCustomers_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STTrainingFDTDReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STTrainingRequirementFutureReport_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STTrainingRequirementFuture_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STTransaction_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STTripDispatchingPlan_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STTripDO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STTripPickingList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STTripViewByDate_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STUserControllersLogin_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STViewCustomers_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STViewEmployeeByConditions_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STViewLogRecords_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSCustomerListByMainID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSCustomerProductGroupsList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSCustomersListForLookup_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSDispatchingOrdersListForPalletInfoDO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSEmployeesListForLookup_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSEmployeeWorkingsLIstByOrderNumber_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSLocationsListForLookup_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSLocationsList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSOrderCategoriesList_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSPalletAllocation_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSPalletsListByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSPalletSUMByReceivingOrderDetailID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSProductsListForLookup_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSProductsListForTableView_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSReceivingDispatchingOrdersPalletInfo_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSReceivingOrderDetailListByID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSReceivingOrderDetailsListByOrderID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSReceivingOrderDetailsStockOnHandByRoom1Customer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSReceivingOrdersListByLocationID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSReceivingOrdersListForPalletInfoByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSReceivingOrdersListForPalletInfoRO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSReceivingOrdersListForPalletInfo_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSServicesDefinitionListForLookup_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVSStockMovementsListByPalletID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STVStmpProductRemainsListByCustomerID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STWarehouseChecking_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STWorkDefinitionByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_MSS_LoadContractViewData_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_DispatchingCartonByLocationID_Result.cs" />
+    <Compile Include="ST_WMS_DispatchingOrderDetailCboPallet_Result.cs" />
+    <Compile Include="ST_WMS_EDI_PickingListsMain_Result.cs" />
+    <Compile Include="ST_WMS_EmployeeAllocations_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_ExportROToDO_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_FindUserLogin_Result.cs" />
+    <Compile Include="ST_WMS_InternalAudit_Result.cs" />
+    <Compile Include="ST_WMS_LoadAllEmployeesData_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadAllPalletsByReceivingOrderID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadAllPalletsIsWeighting_Result.cs" />
+    <Compile Include="ST_WMS_LoadAllStores_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadAllUserRole_Result.cs" />
+    <Compile Include="ST_WMS_LoadApplicationByUser_Result.cs" />
+    <Compile Include="ST_WMS_LoadApplicationRoleByUser_Result.cs" />
+    <Compile Include="ST_WMS_LoadApplicationRoleGroupsByUser_Result.cs" />
+    <Compile Include="ST_WMS_LoadApplicationRoleGroupsFunctionActionByUser_Result.cs" />
+    <Compile Include="ST_WMS_LoadApplicationRoleGroupsFunctionByUser_Result.cs" />
+    <Compile Include="ST_WMS_LoadBillingContractData_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadBussinessTrips_Result.cs" />
+    <Compile Include="ST_WMS_LoadContractDetailData_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadContractEmployeeServicesData_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadCustomerRequirements_Result.cs" />
+    <Compile Include="ST_WMS_LoadDispatchingCartons_Result.cs" />
+    <Compile Include="ST_WMS_LoadDispatchingProductsExport_Result.cs" />
+    <Compile Include="ST_WMS_LoadDODetailsBreakData_Result.cs" />
+    <Compile Include="ST_WMS_LoadDODetailsData_Result.cs" />
+    <Compile Include="ST_WMS_LoadDPProductDataAllPallet_Result.cs" />
+    <Compile Include="ST_WMS_LoadDPProductData_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadEDIDetailsByID_Result.cs" />
+    <Compile Include="ST_WMS_LoadEDI_Orders_All_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadEDI_Orders_Me_0_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadEDI_Orders_Me_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadEvaluationDetail_Result.cs" />
+    <Compile Include="ST_WMS_LoadingReportByDispatchingID_Result.cs" />
+    <Compile Include="ST_WMS_LoadInquiryDetailByInquiryID_Result.cs" />
+    <Compile Include="ST_WMS_LoadInquiryServicesByInquiryDetailsID_Result.cs" />
+    <Compile Include="ST_WMS_LoadListProductByCustomer_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadNotes_Result.cs" />
+    <Compile Include="ST_WMS_LoadOperatingCostMonth_Result.cs" />
+    <Compile Include="ST_WMS_LoadOtherServiceDetails_Result.cs" />
+    <Compile Include="ST_WMS_LoadOtherServiceReport_Result.cs" />
+    <Compile Include="ST_WMS_LoadOtherServicesByOtherServiceID_Result.cs" />
+    <Compile Include="ST_WMS_LoadOtherServices_Result.cs" />
+    <Compile Include="ST_WMS_LoadOutsourcedJobs_Result.cs" />
+    <Compile Include="ST_WMS_LoadQuarantineByDate_Result.cs" />
+    <Compile Include="ST_WMS_LoadRecordProductData_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadRecordProducts_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadReportNoteData_Result.cs" />
+    <Compile Include="ST_WMS_LoadReportToManagementLevel_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadStockMovementFromLocationID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadStockMovementToLocationID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_LoadStockOnHandAverageByCustomer_Result.cs" />
+    <Compile Include="ST_WMS_LoadSupervisorData_Result.cs" />
+    <Compile Include="ST_WMS_LoadTripManagementDetails_Result.cs" />
+    <Compile Include="ST_WMS_LoadTripsManagement_Result.cs" />
+    <Compile Include="ST_WMS_LoadUserAccountByEmployeeID_Result.cs" />
+    <Compile Include="ST_WMS_LoadUserAccount_Result.cs" />
+    <Compile Include="ST_WMS_LoadWarningOffice_Result.cs" />
+    <Compile Include="ST_WMS_LoadWavePickingByCustomer_Result.cs" />
+    <Compile Include="ST_WMS_LoadWorkDefinitionList_Result.cs" />
+    <Compile Include="ST_WMS_LoadWorkDefinitionWithCustomer_Result.cs" />
+    <Compile Include="ST_WMS_LoadWorkDetails_Result.cs" />
+    <Compile Include="ST_WMS_LoadWorksNew_Result.cs" />
+    <Compile Include="ST_WMS_LoadWorks_Result.cs" />
+    <Compile Include="ST_WMS_PalletInfo_Locations_NotRO_Result.cs" />
+    <Compile Include="ST_WMS_ProductsListForChangProduct_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_STComboLocationIDFree_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_STEDI_comboCustomerMainID_1_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_STEDI_comboCustomerMainID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_StockMovementMassAll_Result.cs" />
+    <Compile Include="ST_WMS_StockMovementMassFromDateToDate_Result.cs" />
+    <Compile Include="ST_WMS_StockOnHandByRoomAverageReport_Result.cs" />
+    <Compile Include="ST_WMS_tmpProductRemains_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WMS_WarningFDTDReport_Result.cs" />
+    <Compile Include="STLabelPalletCartonWeight.cs" />
+    <Compile Include="ST_WMS_WarningReport_Result.cs" />
+    <Compile Include="ST_WM_LoadStockMovementFromLocationID_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ST_WWS_CustomerEvents_Result.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskHistories.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblagjenda.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Test2.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpAccounting_BillingContractNull.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpAccounting_Revenues.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpAisles.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingByOvertime.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingByProducts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingCombined.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingCustomerJoined.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingCustomers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingCustomersContracts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingReport.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingRunByDispatchingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpBillingRunByReceivingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpChart.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpConsumables.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpContainerChecking.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpContainerChecking2016_01_26.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpCustomerPallets.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpCustomerSalesInvoiceReprt.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpCustomerSalesOrderUnitStandards.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpDispatchingLocationBreak_bk2016_09_05.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpDispatchingOrderDetailsBreak.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpDispatchingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpDispatchingProductExport.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpDispatchingProducts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEDIDispatchingProducts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpElectrictyCost.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeInOutFinger.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeLunch.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeOTSupervisors.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeWorkingDetailCheck2011.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeWorkingDetailCheck_TotalPerday.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeWorkingDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeWorkingInvalid.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeWorkingPercentage.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpEmployeeWorkings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpFonterraBigC.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpFreeLocations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpLabels.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpLocationCodes.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpLocations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpLocForStockTake.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpMETRORandomWeight.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpMETRORandomWeight2.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpMovementHistory.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpNoteDispatchingOder.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpNoteDispatchingOderDetail.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpPayRollAnnual.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpPayrollAnnualLeaveAll.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpPayrollMonthlyDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpPerformanceCheck.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpProductRemains.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpProducts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpProductsSQL.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpPropertyI.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpPropertyID.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpPropertyMonthly.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpPropertyU.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpReceivingAdvices.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpReceivingOrderDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpReceivingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpReleaseSummary.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpRepeatRows.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpReportingServerMultiAttach.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpResults.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpRoomOccupancies.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpRooms.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpScheduled_JobWeeks.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpStockCorrectionProducts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpStockOnHandByDate.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpStockOnHandDailyLocationMoreThan1Customer.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpStockOnHandTop25Customers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpStockOnHandWeekly.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpTaskBackUp.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpTop40Customers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingDefinitions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingGroupDefinition.cs" />
+    <Compile Include="Trainings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransportTrip.cs" />
+    <Compile Include="TransportTripOutsourceDetail.cs" />
+    <Compile Include="TripDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TripDetailStatu.cs" />
+    <Compile Include="Trips.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Truck.cs" />
+    <Compile Include="TruckOnRoadData.cs" />
+    <Compile Include="UserAccount.cs" />
+    <Compile Include="UserActionDefinition.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserApplicationActivity.cs" />
+    <Compile Include="UserApplicationDefinitions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserApplicationRole.cs" />
+    <Compile Include="UserApplicationRoleGroup.cs" />
+    <Compile Include="UserApplicationRoleGroupFunction.cs" />
+    <Compile Include="UserApplicationRoleGroupFunctionAction.cs" />
+    <Compile Include="UserApplications.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserFunctionDefinition.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserGroupDefinitions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserGroups.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRoleDefinition.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserSupervisors.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VietnameseStringError.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllCustomersInout.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAnnualLeaveByEmployee.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBarcodeScanDOnotDone.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewConfirmationAll.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewConfirmationAllUnion.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewContractsAllCustomers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomerSalesInvoices.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomerSalesInvoices3PL.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomerSalesInvoices3PL_Details.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDHLMcDonaldDispatchingPlan.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDispatchingProduct.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDispatchingProductsDelete.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDispatchingQtyAverage30days.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeEventLast30days.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeInOutRemain.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployees.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeTrainingManagement.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeWorkingLast45days.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeWorkingSupervisor.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeWorkingTotal.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeWorkingTotalPercentage.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFonterraBigCDispatchingDetailsUsedByDate.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFonterraCustomerClients.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFonterraDispatchingOrdersToday.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFonterraQA.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFonterraSales60days.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFonterraSalesContractDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFonterraStockOnHandOnHold.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFreeLocations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFreeLocationsFloor.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewfrmFreeLocations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGate_WorkerLaborSafetyTraining.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHaiNamProductList.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHandlingOvertimeCheck.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHomeLocationByRoom.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInternalAudit.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocationBarcode.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETPalletConsolidationOtherCustomers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETROCalculateWeightAnnimalControl.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETRODispatchingCartons.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETROLabelDispatchingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETROOrderConfirmTime.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETROPalletConsolidation.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETROPalletConsolidationOtherCustomers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETROPalletOnHandDaily.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETROPalletOnHandDailyBilling.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMetroStockByLocationOnHand.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMETROStockOnHandForQA.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMinhPhuCheckingOverTime.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOutsourcedJob60days.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPalletAllocationFree.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPalletRemainWeightInners.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPallet_DoulicateTest.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPayrollMonthlyDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPayrollMonthlyReview.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPizzaHutDispatchingLabel.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProductMain.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProductMainGroup.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPropertyMovements.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQHSELatestComment.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewqryComboCustomerID.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRandomWeightPallets.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSafetyStockReason.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStockOnHandByLotAllCustomers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStockOnHandByWarehouse.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStockOnHandInPalletUnitWeight.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStockTakeByRequestData.cs" />
+    <Compile Include="ViewTotalByLocation.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalDispatchingLocations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalDispatchingOrderDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalDispatchingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalDispatchingProducts.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalPallets.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalReceivingOrderDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalReceivingOrders.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalStockRemain.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTotalUnit_Out.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTripDispatchingPlan.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTuPhuongNumberOfReceivedLocations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTuPhuongNumboerOfLocations.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTuPhuongReceivingPallets.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUnileverDailyLabellingPlan.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUnileverOrderstoBigC.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewVinmartDispatchingOrdersToday.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewVinmartInout.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWallPickingList.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouses.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\AttachmentDA.cs" />
+    <Compile Include="Warehouse\CustomerBookingDA.cs" />
+    <Compile Include="Warehouse\DispatchingLocationDA.cs" />
+    <Compile Include="Warehouse\DispatchingOrderDetailsDA.cs" />
+    <Compile Include="Warehouse\EDIOrdersDA.cs" />
+    <Compile Include="Warehouse\PlantDBContext.cs" />
+    <Compile Include="Warehouse\MetroDBContext.cs" />
+    <Compile Include="Warehouse\PalletDA.cs" />
+    <Compile Include="Warehouse\ReceivingOrdersDA.cs" />
+    <Compile Include="Warehouse\Tote.cs" />
+    <Compile Include="Warehouse\TransactionDAC.cs" />
+    <Compile Include="Warehouse\TripDA.cs" />
+    <Compile Include="Warnings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WavePickingDetails.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WavePickings.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebBillingSummaryCrosstap_Result.cs" />
+    <Compile Include="WebBillingSummaryDetailCrosstap_Result.cs" />
+    <Compile Include="WebBillingSummaryDetails_Result.cs" />
+    <Compile Include="WebChartStockOnHandByAge_Result.cs" />
+    <Compile Include="WebUsers.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMSModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMSModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="WMSVersions.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMS_Applications.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMS_Departments.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMS_Roles.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMS_UserApplicationRoles.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMS_UserApplications.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMS_Users.cs">
+      <DependentUpon>WMSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkTypeDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="WMSModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WMSModel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="TWMS_key.pfx" />
+    <None Include="WMSModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WMSModel.edmx</DependentUpon>
+      <LastGenOutput>WMSModel.Context.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WMSModel.edmx.diagram">
+      <DependentUpon>WMSModel.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WMSModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WMSModel.edmx</DependentUpon>
+      <LastGenOutput>WMSModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bills\" />
+    <Folder Include="Supperviors\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

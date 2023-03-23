@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PfsDBModelStoreContainer" CdmEntityContainer="PfsDBEntities">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="PfsDBModel.Customers">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerRemark" ColumnName="CustomerRemark" />
+          <ScalarProperty Name="CustomerMainID" ColumnName="CustomerMainID" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
