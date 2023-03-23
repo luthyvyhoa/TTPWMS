@@ -67,18 +67,18 @@ namespace UI.ReportFile
             CalculatedFields.Add(remainField);
         }
 
-        private void lblTotal_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void lblTotal_BeforePrint(object sender, CancelEventArgs e)
         {
             this.lblTotal.Text = this.total.ToString();
             this.total = 0;
         }
 
-        private void xrLabel17_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel17_BeforePrint(object sender, CancelEventArgs e)
         {
             total += Convert.ToInt32(GetCurrentColumnValue("DODetailQty"));
         }
 
-        private void lblRemain_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void lblRemain_BeforePrint(object sender, CancelEventArgs e)
         {
             int inPut = Convert.ToInt32(this.lblRODetailQty.Text);
             int outPut= Convert.ToInt32(this.lblTotal.Text);

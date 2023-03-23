@@ -44,7 +44,7 @@ namespace UI.ReportFile
             this.xrSubreport2.ReportSource = rptNo;
         }
 
-        private void xrSubreport2_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrSubreport2_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrSubreport2.SizeF = new SizeF(360, 100);
             this.xrSubreport2.SuspendLayout();
@@ -54,7 +54,7 @@ namespace UI.ReportFile
         {
         }
 
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))

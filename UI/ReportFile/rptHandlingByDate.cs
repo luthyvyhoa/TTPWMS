@@ -18,7 +18,7 @@ namespace UI.ReportFile
             this.xrPictureBox2.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        private void rptHandlingByDate_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptHandlingByDate_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel16.DataBindings.Add("Text", this.DataSource, "TotalWeightIn");
             this.xrLabel15.DataBindings.Add("Text", this.DataSource, "TotalWeightOut");

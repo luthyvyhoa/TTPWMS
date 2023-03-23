@@ -13,7 +13,7 @@ namespace UI.ReportFile
             InitializeComponent();
         }
 
-        private void xrdQtyOfPackage_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrdQtyOfPackage_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -30,7 +30,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel55_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel55_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -47,7 +47,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrdUnitQty_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrdUnitQty_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -64,7 +64,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrdPalletWeight_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrdPalletWeight_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));

@@ -26,7 +26,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel30_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel30_BeforePrint(object sender, CancelEventArgs e)
         {
 
             var lbl = (XRLabel)sender;
@@ -40,7 +40,7 @@ namespace UI.ReportFile
 
         }
 
-        private void xrLabel32_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel32_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("ProductNumber"));
@@ -59,7 +59,7 @@ namespace UI.ReportFile
                 
         }
 
-        private void xrLabel48_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel48_BeforePrint(object sender, CancelEventArgs e)
         {
          
         }

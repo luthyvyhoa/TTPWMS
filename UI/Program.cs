@@ -33,6 +33,7 @@ namespace UI
         [STAThread]
         static void Main()
         {
+            DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.v20_1;
             log.Info("");
             log.Info("<=================== App Start ===================>");
             if (Environment.OSVersion.Version.Major >= 6) SetProcessDPIAware();

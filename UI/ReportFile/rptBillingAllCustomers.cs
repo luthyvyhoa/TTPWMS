@@ -22,7 +22,7 @@ namespace UI.ReportFile
             this.xrPictureBox2.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        private void rptBillingAllCustomers_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptBillingAllCustomers_BeforePrint(object sender, CancelEventArgs e)
         {
             CreateCalculatedFields();
             this.xrLabel31.DataBindings.Add("Text", this.DataSource, "BeginC");
@@ -65,7 +65,7 @@ namespace UI.ReportFile
             this.CalculatedFields.Add(sumW);
         }
 
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))

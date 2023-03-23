@@ -73,7 +73,7 @@
             this.bcPalletID.AutoModule = true;
             this.bcPalletID.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DockDoorID_Barcode]")});
-            this.bcPalletID.Font = new System.Drawing.Font("Arial", 15F);
+            this.bcPalletID.Font = new DevExpress.Drawing.DXFont("Arial", 15F);
             this.bcPalletID.LocationFloat = new DevExpress.Utils.PointFloat(6.954447F, 10.50139F);
             this.bcPalletID.Module = 3F;
             this.bcPalletID.Name = "bcPalletID";
@@ -94,7 +94,7 @@
             this.xrLabel9.CanGrow = false;
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DockNumber]")});
-            this.xrLabel9.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold);
+            this.xrLabel9.Font = new DevExpress.Drawing.DXFont("Arial Black", 36F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(7.513288F, 97.32874F);
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -109,7 +109,7 @@
             // 
             this.xrLabel8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[WarehouseDescription]")});
-            this.xrLabel8.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.xrLabel8.Font = new DevExpress.Drawing.DXFont("Arial Black", 16F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(10.1405F, 160.5971F);
             this.xrLabel8.Name = "xrLabel8";
             this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -184,8 +184,8 @@
             this.sqlDataSource1});
             this.DataMember = "STDockDoorBarcodePrint";
             this.DataSource = this.sqlDataSource1;
-            this.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margins = new System.Drawing.Printing.Margins(1, 2, 0, 0);
+            this.Font = new DevExpress.Drawing.DXFont("Arial Narrow", 10.2F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point, new DevExpress.Drawing.DXFontAdditionalProperty[] {new DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", ((byte)(0)))});
+            this.Margins = new DevExpress.Drawing.DXMargins(1, 2, 0, 0);
             this.PageHeight = 236;
             this.PageWidth = 410;
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;

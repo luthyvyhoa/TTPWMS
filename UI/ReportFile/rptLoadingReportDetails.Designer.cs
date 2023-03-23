@@ -3145,7 +3145,6 @@ namespace UI.ReportFile
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(317.0483F, 113.7916F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            this.xrPictureBox1.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrPictureBox1_BeforePrint);
             // 
             // xrLabel131
             // 
@@ -3252,7 +3251,6 @@ namespace UI.ReportFile
             this.varDispatchingOrderID});
             this.Version = "19.1";
             this.PrintProgress += new DevExpress.XtraPrinting.PrintProgressEventHandler(this.rptLoadingReportDetails_PrintProgress);
-            this.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.rptLoadingReportDetails_BeforePrint);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }

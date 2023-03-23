@@ -18,7 +18,7 @@ namespace UI.ReportFile
             this.xrPictureBox2.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        private void GroupFooter2_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void GroupFooter2_BeforePrint(object sender, CancelEventArgs e)
         {
             int totalPackage = Convert.ToInt32(xrSumQtyOfPackage.Summary.GetResult());
             e.Cancel = (this.totalQTY == totalPackage);

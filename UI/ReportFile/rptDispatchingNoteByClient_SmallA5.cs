@@ -15,7 +15,7 @@ namespace UI.ReportFile
             this.xrPictureBox2.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        private void rptDispatchingNoteByClient_SmallA5_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptDispatchingNoteByClient_SmallA5_BeforePrint(object sender, CancelEventArgs e)
         {
             //this.DefaultPrinterSettingsUsing.UseLandscape = false;
 			// add comment

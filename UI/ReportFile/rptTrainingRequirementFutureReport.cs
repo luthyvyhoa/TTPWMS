@@ -25,7 +25,7 @@ namespace UI.ReportFile
             //this.xrLabel22.DataBindings.Add("Text", this.DataSource, "TrainingExpiryDate", "dd/MM/yyyy");
         }
 
-        private void DetailBeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void DetailBeforePrint(object sender, CancelEventArgs e)
         {
             XRLabel label = sender as XRLabel;
             DateTime expiryDate = this.GetCurrentColumnValue("TrainingExpiryDate") == null || this.GetCurrentColumnValue("TrainingExpiryDate").Equals("") ? DateTime.Now : Convert.ToDateTime(this.GetCurrentColumnValue("TrainingExpiryDate"));
@@ -54,7 +54,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void rptTrainingRequirementFutureReport_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptTrainingRequirementFutureReport_BeforePrint(object sender, CancelEventArgs e)
         {
             this.Detail.SortFields.Add(new GroupField("TrainingExpiryDate", XRColumnSortOrder.Ascending));
         }

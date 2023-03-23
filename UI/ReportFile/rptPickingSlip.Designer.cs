@@ -139,9 +139,9 @@
             this.GroupHeader3,
             this.GroupFooter3});
             this.Dpi = 254F;
-            this.Font = new System.Drawing.Font("Arial", 9F);
+            this.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(50, 50, 50, 50);
+            this.Margins = new DevExpress.Drawing.DXMargins(50, 50, 50, 50);
             this.PageHeight = 2159;
             this.PageWidth = 2794;
             this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;

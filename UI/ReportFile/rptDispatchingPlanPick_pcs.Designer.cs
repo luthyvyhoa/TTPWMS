@@ -64,8 +64,8 @@
             this.TopMargin,
             this.BottomMargin});
             this.Dpi = 254F;
-            this.Font = new System.Drawing.Font("Arial", 9F);
-            this.Margins = new System.Drawing.Printing.Margins(50, 50, 50, 50);
+            this.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
+            this.Margins = new DevExpress.Drawing.DXMargins(50, 50, 50, 50);
             this.PageHeight = 2794;
             this.PageWidth = 2159;
             this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;

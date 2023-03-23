@@ -23,7 +23,7 @@ namespace UI.ReportFile
             this.xrPictureBox2.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        private void rptStockOnHandByRoomAverage_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptStockOnHandByRoomAverage_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel33.Text = "by [" + AppSetting.CurrentUser.LoginName + "]";
         }
@@ -45,7 +45,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel15_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel15_BeforePrint(object sender, CancelEventArgs e)
         {
             if (!string.IsNullOrEmpty(((DevExpress.XtraReports.UI.XRLabel)sender).Text))
             {

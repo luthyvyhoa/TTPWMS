@@ -16,7 +16,7 @@ namespace UI.ReportFile
             this.xrPictureBox1.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        private void rptWarnings_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptWarnings_BeforePrint(object sender, CancelEventArgs e)
         {
             try
             {

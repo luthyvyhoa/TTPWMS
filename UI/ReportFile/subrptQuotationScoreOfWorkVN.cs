@@ -22,7 +22,7 @@ namespace UI.ReportFile
             GroupHeader1.GroupFields.Add(groupField);
         }
 
-        private void xrLabel8_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel8_BeforePrint(object sender, CancelEventArgs e)
         {
             var dataSource = (DataRowView)this.GetCurrentRow();
             string quotationNumber = Convert.ToString(dataSource.Row["QuotationNumber"]);

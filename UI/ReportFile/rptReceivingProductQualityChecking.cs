@@ -18,7 +18,7 @@ namespace UI.ReportFile
             this.xrPictureBox2.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        void xrRichText1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        void xrRichText1_BeforePrint(object sender, CancelEventArgs e)
         {
             RichEditControl richEditControl1 = new RichEditControl();
             richEditControl1.RtfText = this.xrRichText1.Rtf;
@@ -35,7 +35,7 @@ namespace UI.ReportFile
             richEditControl1.Dispose();
         }
 
-        private void rptReceivingProductQualityChecking_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptReceivingProductQualityChecking_BeforePrint(object sender, CancelEventArgs e)
         {
         }
 

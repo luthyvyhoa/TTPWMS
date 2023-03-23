@@ -1,3 +1,10 @@
 .svn/
 packages/
 .vs/
+Common/obj/
+DA/bin/
+DA/obj/
+UI/obj/
+Common/bin/
+UI/bin/
+*.bak

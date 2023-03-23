@@ -22,7 +22,7 @@ namespace UI.ReportFile
             this.xrLabel128.Text ="By: "+ AppSetting.CurrentUser.LoginName;
             this.xrPictureBox2.Image = UI.Properties.Resources.ImageCompany;
         }
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))
@@ -31,7 +31,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void rptLoadingReportDetails_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptLoadingReportDetails_BeforePrint(object sender, CancelEventArgs e)
         {
         }
 

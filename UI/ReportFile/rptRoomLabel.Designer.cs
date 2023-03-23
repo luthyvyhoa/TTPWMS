@@ -82,7 +82,7 @@
             // xrLabel1
             // 
             this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel1.Font = new System.Drawing.Font("Arial", 89F, System.Drawing.FontStyle.Bold);
+            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Arial", 89F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 63.12497F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -110,9 +110,9 @@
             this.topMarginBand1,
             this.bottomMarginBand1});
             this.BorderWidth = 0F;
-            this.Font = new System.Drawing.Font("Arial", 9F);
+            this.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 5, 21);
+            this.Margins = new DevExpress.Drawing.DXMargins(0, 0, 5, 21);
             this.PageHeight = 550;
             this.PageWidth = 1800;
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;

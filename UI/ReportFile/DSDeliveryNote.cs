@@ -20,7 +20,7 @@ namespace SCSVN.Report
             this.xrPictureBox1.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        private void xrName_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrName_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrName.Text = AppSetting.CurrentUser.LoginName;
         }

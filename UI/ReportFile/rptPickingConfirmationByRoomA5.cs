@@ -32,7 +32,7 @@ namespace UI.ReportFile
             this.xrLabel46.Text = AppSetting.CurrentUser.LoginName;
         }
 
-        private void xrLabel14_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel14_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -50,7 +50,7 @@ namespace UI.ReportFile
 
         }
 
-        private void xrLabel36_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel36_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -68,7 +68,7 @@ namespace UI.ReportFile
 
         }
 
-        private void xrLabel7_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel7_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -85,7 +85,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel20_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel20_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -102,7 +102,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel8_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel8_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -119,7 +119,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel21_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel21_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -136,7 +136,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel25_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel25_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -153,7 +153,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel34_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel34_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -170,7 +170,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel33_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel33_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -187,7 +187,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel35_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel35_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));

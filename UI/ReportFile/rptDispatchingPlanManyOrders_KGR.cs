@@ -17,7 +17,7 @@ namespace UI.ReportFile
         public int _sumCtns=0;
         public int temp = 0;
             
-        private void xrdPalletWeight_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrdPalletWeight_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -34,7 +34,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrdQtyOfPackage_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrdQtyOfPackage_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -51,7 +51,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel27_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel27_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -68,7 +68,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrdUnitQty_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrdUnitQty_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("Packages"));
@@ -90,7 +90,7 @@ namespace UI.ReportFile
 
         }
 
-        private void xrLabel73_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel73_BeforePrint(object sender, CancelEventArgs e)
         {
             //ctns
             var lbl = (XRLabel)sender;
@@ -106,7 +106,7 @@ namespace UI.ReportFile
            
         }
 
-        private void xrLabel87_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel87_BeforePrint(object sender, CancelEventArgs e)
         {
 
             var lbl = (XRLabel)sender;

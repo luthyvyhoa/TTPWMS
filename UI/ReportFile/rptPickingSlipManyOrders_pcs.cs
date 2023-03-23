@@ -14,7 +14,7 @@ namespace UI.ReportFile
             InitializeComponent();
         }
 
-        private void GroupFooter1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
         {
             try
             {
@@ -27,7 +27,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel24_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel24_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel24.Text = "Kỷ Nguyên Mới | Printed: "+ DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")+ " by "+ AppSetting.CurrentUser.LoginName;
         }

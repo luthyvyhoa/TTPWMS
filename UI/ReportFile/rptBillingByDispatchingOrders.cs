@@ -34,12 +34,12 @@ namespace UI.ReportFile
             this.xrLabel37.DataBindings.Add("Text", this.DataSource, "fieldWeight");
         }
 
-        private void xrLabel44_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel44_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel44.Text = AppSetting.CurrentEmployee.FullName;
         }
 
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))

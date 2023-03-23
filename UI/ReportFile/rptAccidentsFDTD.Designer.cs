@@ -63,7 +63,7 @@
             this.Detail,
             this.TopMargin,
             this.BottomMargin});
-            this.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.Font = new DevExpress.Drawing.DXFont("Calibri", 9.75F);
             this.Version = "16.2";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 

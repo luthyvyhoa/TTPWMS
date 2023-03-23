@@ -13,7 +13,7 @@ namespace UI.ReportFile
             InitializeComponent();
         }
 
-        private void GroupFooter2_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void GroupFooter2_BeforePrint(object sender, CancelEventArgs e)
         {
             try
             {

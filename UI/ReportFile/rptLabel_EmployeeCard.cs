@@ -15,7 +15,7 @@ namespace UI.ReportFile
             InitializeComponent();
         }
 
-        private void xrLabel3_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel3_BeforePrint(object sender, CancelEventArgs e)
         {
             //string proDate = Convert.ToString(this.GetCurrentColumnValue("ProductionDate"));
             //string expDate =  Convert.ToString(this.GetCurrentColumnValue("UseByDate"));
@@ -29,12 +29,12 @@ namespace UI.ReportFile
             //this.xrLabel3.Text = stringCombine.ToString();
         }
 
-        private void xrLabel20_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel20_BeforePrint(object sender, CancelEventArgs e)
         {
             //xrLabel20.Text = "by :" + AppSetting.CurrentUser.LoginName;
         }
 
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string emplyeeID;
             int employee;
@@ -61,7 +61,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void Detail_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void Detail_BeforePrint(object sender, CancelEventArgs e)
         {
             
         }

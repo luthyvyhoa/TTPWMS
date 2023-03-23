@@ -14,7 +14,7 @@ namespace UI.ReportFile
             InitializeComponent();
         }
 
-        private void rptLabel_Barcode_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptLabel_Barcode_BeforePrint(object sender, CancelEventArgs e)
         {
             var proDate = this.GetCurrentColumnValue("ProductionDate");
             var expDate = this.GetCurrentColumnValue("UseByDate");

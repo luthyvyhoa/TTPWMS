@@ -14,12 +14,12 @@ namespace UI.ReportFile
             InitializeComponent();
         }
 
-        private void xrLabel18_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel18_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel18.Text = "Kỷ Nguyên Mới | Printed: " + DateTime.Now.ToString("0:dd/MM/yyyy HH:mm") + " by " + AppSetting.CurrentUser.LoginName;
         }
 
-        private void GroupFooter1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
         {
             try
             {

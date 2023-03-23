@@ -70,7 +70,7 @@
             // 
             // txtCustomerName
             // 
-            this.txtCustomerName.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Bold);
+            this.txtCustomerName.Font = new DevExpress.Drawing.DXFont("Arial", 22F, DevExpress.Drawing.DXFontStyle.Bold);
             this.txtCustomerName.LocationFloat = new DevExpress.Utils.PointFloat(258F, 9.999989F);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -80,7 +80,7 @@
             // 
             // txtSpecialRequirement
             // 
-            this.txtSpecialRequirement.Font = new System.Drawing.Font("Arial", 37.8F, System.Drawing.FontStyle.Bold);
+            this.txtSpecialRequirement.Font = new DevExpress.Drawing.DXFont("Arial", 37.8F, DevExpress.Drawing.DXFontStyle.Bold);
             this.txtSpecialRequirement.LocationFloat = new DevExpress.Utils.PointFloat(23.99998F, 246F);
             this.txtSpecialRequirement.Name = "txtSpecialRequirement";
             this.txtSpecialRequirement.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -92,7 +92,7 @@
             // 
             // txtDispatchingOrderDate
             // 
-            this.txtDispatchingOrderDate.Font = new System.Drawing.Font("Arial", 37.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDispatchingOrderDate.Font = new DevExpress.Drawing.DXFont("Arial", 37.8F, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, new DevExpress.Drawing.DXFontAdditionalProperty[] {new DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", ((byte)(0)))});
             this.txtDispatchingOrderDate.LocationFloat = new DevExpress.Utils.PointFloat(72.00001F, 174F);
             this.txtDispatchingOrderDate.Name = "txtDispatchingOrderDate";
             this.txtDispatchingOrderDate.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -104,7 +104,7 @@
             // 
             // txtDispatchingOrderNumber
             // 
-            this.txtDispatchingOrderNumber.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDispatchingOrderNumber.Font = new DevExpress.Drawing.DXFont("Arial", 72F, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, new DevExpress.Drawing.DXFontAdditionalProperty[] {new DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", ((byte)(0)))});
             this.txtDispatchingOrderNumber.LocationFloat = new DevExpress.Utils.PointFloat(72.00001F, 59.99999F);
             this.txtDispatchingOrderNumber.Name = "txtDispatchingOrderNumber";
             this.txtDispatchingOrderNumber.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -116,7 +116,7 @@
             // 
             // xrPageInfo1
             // 
-            this.xrPageInfo1.Font = new System.Drawing.Font("Garamond", 9F, System.Drawing.FontStyle.Italic);
+            this.xrPageInfo1.Font = new DevExpress.Drawing.DXFont("Garamond", 9F, DevExpress.Drawing.DXFontStyle.Italic);
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(5.999883F, 410.4074F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -129,7 +129,7 @@
             // 
             this.xrLabel46.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Parameters.varCurrentUser]")});
-            this.xrLabel46.Font = new System.Drawing.Font("Garamond", 9F, System.Drawing.FontStyle.Italic);
+            this.xrLabel46.Font = new DevExpress.Drawing.DXFont("Garamond", 9F, DevExpress.Drawing.DXFontStyle.Italic);
             this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(251.9999F, 410.4074F);
             this.xrLabel46.Name = "xrLabel46";
             this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -145,7 +145,7 @@
             // 
             // txtCustomerNumber
             // 
-            this.txtCustomerNumber.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Bold);
+            this.txtCustomerNumber.Font = new DevExpress.Drawing.DXFont("Arial", 22F, DevExpress.Drawing.DXFontStyle.Bold);
             this.txtCustomerNumber.LocationFloat = new DevExpress.Utils.PointFloat(12.00002F, 9.999989F);
             this.txtCustomerNumber.Name = "txtCustomerNumber";
             this.txtCustomerNumber.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -180,9 +180,9 @@
             this.Detail,
             this.TopMargin,
             this.BottomMargin});
-            this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new DevExpress.Drawing.DXFont("Arial", 10.2F, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point, new DevExpress.Drawing.DXFontAdditionalProperty[] {new DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", ((byte)(0)))});
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(11, 11, 10, 10);
+            this.Margins = new DevExpress.Drawing.DXMargins(11, 11, 10, 10);
             this.PageHeight = 583;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A5;

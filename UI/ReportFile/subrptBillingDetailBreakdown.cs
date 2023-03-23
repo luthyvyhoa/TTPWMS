@@ -63,7 +63,7 @@ namespace UI.ReportFile
             this.CalculatedFields.Add(sumP);
         }
 
-        private void Detail_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void Detail_BeforePrint(object sender, CancelEventArgs e)
         {
 
         }

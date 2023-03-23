@@ -35,28 +35,35 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>TWMS_key.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="DevExpress.Data.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Office.v19.1.Core">
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Pdf.v19.1.Core">
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v19.1.Core">
+    <Reference Include="DevExpress.Office.v22.2.Core">
     </Reference>
-    <Reference Include="DevExpress.Utils.v19.1.UI">
+    <Reference Include="DevExpress.Pdf.v22.2.Core">
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v19.1">
+    <Reference Include="DevExpress.RichEdit.v22.2.Core">
     </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v19.1">
+    <Reference Include="DevExpress.Utils.v22.2.UI">
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v19.1">
+    <Reference Include="DevExpress.XtraBars.v22.2">
     </Reference>
-    <Reference Include="DevExpress.XtraVerticalGrid.v19.1">
+    <Reference Include="DevExpress.XtraRichEdit.v22.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v22.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v22.2">
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
@@ -2928,7 +2935,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-    <None Include="TWMS_key.pfx" />
     <None Include="WMSModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>WMSModel.edmx</DependentUpon>

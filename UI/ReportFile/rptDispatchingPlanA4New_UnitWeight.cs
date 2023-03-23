@@ -17,7 +17,7 @@ namespace UI.ReportFile
 
      
 
-        private void xrdPalletWeight_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrdPalletWeight_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("ProductNumber"));
@@ -38,7 +38,7 @@ namespace UI.ReportFile
 
         }
 
-        private void xrdQtyOfPackage_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrdQtyOfPackage_BeforePrint(object sender, CancelEventArgs e)
         {
             var lbl = (XRLabel)sender;
             string productNo = Convert.ToString(this.GetCurrentColumnValue("ProductNumber"));

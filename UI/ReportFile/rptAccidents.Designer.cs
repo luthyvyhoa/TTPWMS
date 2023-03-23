@@ -73,7 +73,7 @@
             this.Detail,
             this.TopMargin,
             this.BottomMargin});
-            this.Margins = new System.Drawing.Printing.Margins(100, 100, 0, 1);
+            this.Margins = new DevExpress.Drawing.DXMargins(100, 100, 0, 1);
             this.Version = "17.2";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 

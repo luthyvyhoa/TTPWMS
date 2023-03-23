@@ -64,12 +64,12 @@ namespace UI.ReportFile
             this.xrLabel53.DataBindings.Add("Text", this.DataSource, "sumQtyWeight");
         }
 
-        private void xrLabel68_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel68_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel24.Text = AppSetting.CurrentEmployee.FullName;
         }
 
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))

@@ -50,7 +50,7 @@ namespace UI.ReportFile
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="System.Drawing.Printing.PrintEventArgs"/> instance containing the event data.</param>
-        private void grhProblemByMonth_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void grhProblemByMonth_BeforePrint(object sender, CancelEventArgs e)
         {
             var currentRowView = this.GetCurrentRow() as DataRowView;
             var currentMonthYear = currentRowView.Row[MonthYear];
@@ -146,7 +146,7 @@ namespace UI.ReportFile
             return result;
         }
 
-        private void ReportHeader_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void ReportHeader_BeforePrint(object sender, CancelEventArgs e)
         {
             // Update chart title
             var fromMonthStr = this.fromDate.ToString("dd/MM/yyyy");

@@ -81,7 +81,7 @@
             this.ReportHeader,
             this.ReportFooter,
             this.PageFooter});
-            this.Margins = new System.Drawing.Printing.Margins(25, 25, 25, 27);
+            this.Margins = new DevExpress.Drawing.DXMargins(25, 25, 25, 27);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

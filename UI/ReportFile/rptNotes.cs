@@ -21,7 +21,7 @@ namespace UI.ReportFile
             this.xrPictureBox2.Image = UI.Properties.Resources.ImageCompany;
         }
 
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))
@@ -30,7 +30,7 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel19_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel19_BeforePrint(object sender, CancelEventArgs e)
         {
             int supervisorID = Convert.ToInt32(this.GetCurrentColumnValue("SupervisorID"));
             if (supervisorID > 0)
@@ -42,12 +42,12 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel4_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel4_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel4.Text = "Họ và tên: " + currentEmployee.VietnamName;
         }
 
-        private void xrLabel5_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel5_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel5.Text = "Chức vụ:    " + currentEmployee.VietnamPosition;
         }

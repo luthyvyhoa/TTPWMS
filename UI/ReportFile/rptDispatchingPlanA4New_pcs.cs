@@ -14,7 +14,7 @@ namespace UI.ReportFile
             InitializeComponent();
         }
 
-        private void xrKetoan_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrKetoan_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrKetoan.Text = "Kế toán: " + AppSetting.CurrentUser.LoginName + " " + DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss tt"); ;
         }

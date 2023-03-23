@@ -65,14 +65,14 @@ namespace UI.ReportFile
             this.CalculatedFields.Add(sumOverP);
         }
 
-        private void xrLabel3_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel3_BeforePrint(object sender, CancelEventArgs e)
         {
             DataProcess<Employees> empDA = new DataProcess<Employees>();
             var fullname = empDA.Select(a => a.EmployeeID == AppSetting.CurrentUser.EmployeeID).FirstOrDefault().VietnamName;
             this.xrLabel3.Text = fullname;
         }
 
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))

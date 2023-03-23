@@ -25,7 +25,7 @@ namespace UI.ReportFile
             this.GroupHeader2.GroupFields.Add(new GroupField("LocationNumber"));
         }
 
-        private void xrPictureBox1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))
@@ -34,12 +34,12 @@ namespace UI.ReportFile
             }
         }
 
-        private void xrLabel24_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel24_BeforePrint(object sender, CancelEventArgs e)
         {
             this.xrLabel24.Text = AppSetting.CurrentEmployee.FullName;
         }
 
-        private void rptStockByLocationLocationKGR_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void rptStockByLocationLocationKGR_BeforePrint(object sender, CancelEventArgs e)
         {
             //GroupField sortField = new GroupField("LocationNumber");
             //sortField.SortOrder = XRColumnSortOrder.Ascending;

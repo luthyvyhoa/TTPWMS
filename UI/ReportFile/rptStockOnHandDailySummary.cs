@@ -87,7 +87,7 @@ namespace UI.ReportFile
             //this.xrLabel19.Text = divWP.ToString("n0");
         }
 
-        private void xrLabel19_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel19_BeforePrint(object sender, CancelEventArgs e)
         {
             double weight = Convert.ToDouble(this.xrLabel20.Text);
             double pallets = Convert.ToDouble(this.xrLabel21.Text);

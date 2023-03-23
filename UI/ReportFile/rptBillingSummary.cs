@@ -39,14 +39,14 @@ namespace UI.ReportFile
             lblTotal3.Text = (this.allConfirm - this.unConfirm).ToString();
         }
 
-        private void xrLabel9_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrLabel9_BeforePrint(object sender, CancelEventArgs e)
         {
             DataProcess<Employees> empDA = new DataProcess<Employees>();
             var fullname = empDA.Select(a => a.EmployeeID == AppSetting.CurrentUser.EmployeeID).FirstOrDefault().FullName;
             this.xrLabel9.Text = fullname;
         }
 
-        private void xrPictureBox2_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        private void xrPictureBox2_BeforePrint(object sender, CancelEventArgs e)
         {
             string imagePath = AppSetting.PathSignature + AppSetting.CurrentUser.EmployeeID + ".jpg";
             if (System.IO.File.Exists(imagePath))
