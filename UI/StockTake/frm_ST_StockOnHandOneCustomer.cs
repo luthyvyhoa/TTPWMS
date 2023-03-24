@@ -4,6 +4,7 @@ using DA;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -439,12 +440,17 @@ namespace UI.StockTake
         {
             string fileName = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\" 
                 + "PalletHistory_" + this.textEditCustomerName.Text + "_" + DateTime.Now.ToString("dd_MM_yy") + ".xlsx";
-
+            int i = 2;
+            while (File.Exists(fileName))
+            {
+                fileName = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\"
+                + "PalletHistory_" + this.textEditCustomerName.Text + "_" + DateTime.Now.ToString("dd_MM_yy") + "_" + i + ".xlsx";
+                i++;
+            }
             try
             {
                 this.grvPalletHistories.ExportToXlsx(fileName);
-                MessageBox.Show("Grid exported to the file : " + Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\"
-                    + "PalletHistory_" + this.textEditCustomerName.Text + "_" + DateTime.Now.ToString("dd_MM_yy") + ".xlsx");
+                MessageBox.Show("Grid exported to the file: " + fileName);
 
             }
             catch (Exception ex)

@@ -88,17 +88,17 @@ namespace UI.MasterSystemSetup
         {
             System.Threading.Tasks.Task.Run(() =>
             {
-                Image imgDisplay = null;
-                if (NetworkHelper.IsConnectedToInternet())
-                    imgDisplay = Properties.Resources.On;
-                else
-                    imgDisplay = Properties.Resources.Off;
+                //Image imgDisplay = null;
+                //if (NetworkHelper.IsConnectedToInternet())
+                //    imgDisplay = Properties.Resources.On;
+                //else
+                //    imgDisplay = Properties.Resources.Off;
 
-                if (this.sleeptime)
-                    this.picNetWork.Image = imgDisplay;
-                else
-                    this.picNetWork.Image = Properties.Resources.Empty;
-                this.sleeptime = !sleeptime;
+                //if (this.sleeptime)
+                //    this.picNetWork.Image = imgDisplay;
+                //else
+                //    this.picNetWork.Image = Properties.Resources.Empty;
+                //this.sleeptime = !sleeptime;
             });
         }
 
