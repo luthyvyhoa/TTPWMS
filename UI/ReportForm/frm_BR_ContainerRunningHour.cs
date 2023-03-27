@@ -73,9 +73,12 @@ namespace UI.ReportForm
             try
             {
                 int ContInoutID = Convert.ToInt32(this.grvVehicleManagementTableView.GetFocusedRowCellValue("VehicleInOutID"));
-                String orderNumber = this.grvVehicleManagementTableView.GetFocusedRowCellValue("VehicleInOutID").ToString();
-                this.grdContainerCheckings.DataSource = FileProcess.LoadTable("STGate_ContainerCheckingsByContInOutID " + ContInoutID);
-                this.grdElectricComsumption.DataSource = FileProcess.LoadTable("STElectricityConsumption @OrderNumber ='" + orderNumber + "'");
+                if (ContInoutID > 0)
+                {
+                    String orderNumber = this.grvVehicleManagementTableView.GetFocusedRowCellValue("VehicleInOutID").ToString();
+                    this.grdContainerCheckings.DataSource = FileProcess.LoadTable("STGate_ContainerCheckingsByContInOutID " + ContInoutID);
+                    this.grdElectricComsumption.DataSource = FileProcess.LoadTable("STElectricityConsumption @OrderNumber ='" + orderNumber + "'");
+                }
             }
             catch
             {
@@ -150,7 +153,7 @@ namespace UI.ReportForm
 
         private void btnCreateService_Click(object sender, EventArgs e)
         {
-            string svcID = this.grvVehicleManagementTableView.GetFocusedRowCellValue("VehicleInOutID").ToString();
+            string svcID = this.grvVehicleManagementTableView.GetFocusedRowCellValue("VehicleInOutID") == null ? "" : this.grvVehicleManagementTableView.GetFocusedRowCellValue("VehicleInOutID").ToString();
             if (svcID != "")
             {
                 XtraMessageBox.Show("Can not create service for this Container !", "TPWMS", MessageBoxButtons.OK, MessageBoxIcon.Error);
