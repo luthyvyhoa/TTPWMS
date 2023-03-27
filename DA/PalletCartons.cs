@@ -28,13 +28,22 @@ namespace DA
         public Nullable<bool> CheckDelete { get; set; }
         public Nullable<decimal> CartonWeightPay { get; set; }
         public Nullable<float> NetWeightSupplier { get; set; }
-        public Nullable<decimal> TareWeight { get; set; }
-        public string Size { get; set; }
-        public string Batch { get; set; }
-        public string TraceCode { get; set; }
-        public string POCode { get; set; }
-        public string DateOfYear { get; set; }
-        public int NoBatch{ get; set; }
+        public string CartonManufacturingBarcode { get; set; }
+        public string ProductTypeMP { get; set; }
+        public string ProductCodeMP { get; set; }
+        public string ProductNameMP { get; set; }
+        public string SizeMP { get; set; }
+        public string BatchMP { get; set; }
+        public string TraceCodeMP { get; set; }
+        public Nullable<decimal> QtyMP { get; set; }
+        public string UnitMP { get; set; }
+        public string POCodeMP { get; set; }
+        public string ProDateMP { get; set; }
+        public string ExpDateMP { get; set; }
+        public string FactoryCodeMP { get; set; }
+        public string IDCartonMP { get; set; }
+        public string SOMP { get; set; }
+        public string T15MP { get; set; }
         public bool IsModified { get; set; }
     }
 }

@@ -1234,8 +1234,11 @@ namespace UI.WarehouseManagement
             // Check the controls on form is allow active
             if (!this.isLockOrder)
             {
-                isReadOnly = false;
-
+                int totalDetailConfirm = this.listOrderDetail.Count(dp => dp.Status == 2);
+                if (totalDetailConfirm == this.listOrderDetail.Count)
+                    isReadOnly = true;
+                else
+                    isReadOnly = false;
             }
 
             this.lookUpEditCustomerID.ReadOnly = isReadOnly;
@@ -1258,6 +1261,7 @@ namespace UI.WarehouseManagement
             this.lke_WM_Supplier.ReadOnly = isReadOnly;
             this.lke_TimeSlotID.ReadOnly = isReadOnly;
             this.textEditInernalRemark.ReadOnly = isReadOnly;
+            this.lkeWorkType.ReadOnly = isReadOnly;
 
             //this.gridControlOrderDetail.OptionsBehavior.ReadOnly = isReadOnly;
             this.gridColumnProductID.OptionsColumn.ReadOnly = isReadOnly;
@@ -1283,6 +1287,18 @@ namespace UI.WarehouseManagement
             this.iAcceptAllLocations.Enabled = !isReadOnly;
             this.iConfirm.Enabled = !isReadOnly;
             this.iChangeRoom.Enabled = !isReadOnly;
+            this.btnDispatchingClientAssignment.Enabled = !isReadOnly;
+            this.btnSyncNavi.Enabled = !isReadOnly;
+            this.bbuttonUpdateProDate.Enabled = !isReadOnly;
+            this.bbuttonEDICheck.Enabled = !isReadOnly;
+            this.barButtonItem69.Enabled = !isReadOnly;
+            this.btnHoldProcess.Enabled = !isReadOnly;
+            this.barButtonItem64.Enabled = !isReadOnly;
+            this.iChangeRoom.Enabled = !isReadOnly;
+            this.iConfirm.Enabled = !isReadOnly;
+            this.iAcceptAllLocations.Enabled = !isReadOnly;
+            this.iSetLocation.Enabled = !isReadOnly;
+            this.btn_WM_NewAllProduct.Enabled = !isReadOnly;
         }
 
         private void frm_WM_ReceivingOrders_VisibleChanged(object sender, EventArgs e)

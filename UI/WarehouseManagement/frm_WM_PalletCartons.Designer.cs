@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_WM_PalletCartons));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.btn_WM_Update = new DevExpress.XtraBars.BarButtonItem();
             this.btn_WM_Cancel = new DevExpress.XtraBars.BarButtonItem();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -411,9 +411,9 @@
             // rpi_btn_Delete
             // 
             this.rpi_btn_Delete.AutoHeight = false;
-            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.rpi_btn_Delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.rpi_btn_Delete.Name = "rpi_btn_Delete";
             this.rpi_btn_Delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.rpi_btn_Delete.Click += new System.EventHandler(this.rpi_btn_Delete_Click);
@@ -431,7 +431,7 @@
             // gridColumn11
             // 
             this.gridColumn11.Caption = "Size";
-            this.gridColumn11.FieldName = "Size";
+            this.gridColumn11.FieldName = "pc.SizeMP";
             this.gridColumn11.MinWidth = 25;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
@@ -441,7 +441,7 @@
             // gridColumn12
             // 
             this.gridColumn12.Caption = "Batch";
-            this.gridColumn12.FieldName = "Batch";
+            this.gridColumn12.FieldName = "pc.BatchMP";
             this.gridColumn12.MinWidth = 25;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
@@ -451,7 +451,7 @@
             // gridColumn13
             // 
             this.gridColumn13.Caption = "TraceCode";
-            this.gridColumn13.FieldName = "TraceCode";
+            this.gridColumn13.FieldName = "pc.TraceCodeMP";
             this.gridColumn13.MinWidth = 25;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
@@ -461,7 +461,7 @@
             // gridColumn14
             // 
             this.gridColumn14.Caption = "POCode";
-            this.gridColumn14.FieldName = "POCode";
+            this.gridColumn14.FieldName = "pc.POCodeMP";
             this.gridColumn14.MinWidth = 25;
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.Visible = true;
@@ -470,8 +470,8 @@
             // 
             // gridColumn15
             // 
-            this.gridColumn15.Caption = "DateOfYear";
-            this.gridColumn15.FieldName = "DateOfYear";
+            this.gridColumn15.Caption = "Pro Date";
+            this.gridColumn15.FieldName = "pc.ProDateMP";
             this.gridColumn15.MinWidth = 25;
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.Visible = true;
@@ -480,8 +480,8 @@
             // 
             // gridColumn16
             // 
-            this.gridColumn16.Caption = "NoBatch";
-            this.gridColumn16.FieldName = "NoBatch";
+            this.gridColumn16.Caption = "Exp Date";
+            this.gridColumn16.FieldName = "pc.ExpDateMP";
             this.gridColumn16.MinWidth = 25;
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.Visible = true;

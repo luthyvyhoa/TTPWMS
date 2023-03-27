@@ -410,7 +410,7 @@ namespace UI.WarehouseManagement
                 {
                     gridControlOrderDetail.DataSource = null;
                     DataProcess<DispatchingProducts> daProducts = new DataProcess<DispatchingProducts>();
-                    List<DispatchingProducts> lst = daProducts.Select(dp=>dp.DispatchingOrderID==DispatchingOrderID).ToList();
+                    List<DispatchingProducts> lst = daProducts.Select(dp => dp.DispatchingOrderID == DispatchingOrderID).ToList();
                     foreach (DispatchingProducts x in lst)
                     {
                         listOrderDetail.Add(x);
@@ -1644,7 +1644,11 @@ namespace UI.WarehouseManagement
             // Check the controls on form is allow active
             if (!this.isLockOrder)
             {
-                isReadOnly = false;
+                int totalDetailConfirm = this.listOrderDetail.Count(dp => dp.Status == 2);
+                if (totalDetailConfirm == this.listOrderDetail.Count) 
+                    isReadOnly = true;
+                else
+                    isReadOnly = false;
             }
 
             this.lookUpEditCustomerID.Properties.ReadOnly = isReadOnly;
@@ -1669,6 +1673,8 @@ namespace UI.WarehouseManagement
             this.comboBoxEdit1.ReadOnly = true;
             this.textEditInernalRemark.ReadOnly = isReadOnly;
             this.textEditServiceName.ReadOnly = isReadOnly;
+            this.lkeWorkType.ReadOnly = isReadOnly;
+
             //this.gridViewOrderDetail.OptionsBehavior.ReadOnly = isReadOnly;
             this.gridColumnProductID.OptionsColumn.ReadOnly = isReadOnly;
             this.gridColumnProductName.OptionsColumn.ReadOnly = isReadOnly;
@@ -1685,6 +1691,17 @@ namespace UI.WarehouseManagement
             this.btn_WM_NewProduct.Enabled = !isReadOnly;
             this.iAcceptAllLocations.Enabled = !isReadOnly;
             this.iConfirm.Enabled = !isReadOnly;
+            this.btn_UnConfirmDO.Enabled = !isReadOnly;
+            this.btnSyncNavi.Enabled = !isReadOnly;
+            this.barButtonReverseDO.Enabled = !isReadOnly;
+            this.btnCreateCartons.Enabled = !isReadOnly;
+            this.barButtonUpdateReference.Enabled = !isReadOnly;
+            this.barButtonSplitOrder.Enabled = !isReadOnly;
+            this.barButtonItem64.Enabled = !isReadOnly;
+            this.iConfirm.Enabled = !isReadOnly;
+            this.iAcceptAllLocations.Enabled = !isReadOnly;
+            this.btn_WM_NewProduct.Enabled = !isReadOnly;
+            this.btn_WM_NewAllProducts.Enabled = !isReadOnly;
         }
 
         private void DeleteDispatchingOrder()
