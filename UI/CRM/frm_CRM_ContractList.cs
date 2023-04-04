@@ -1,5 +1,6 @@
 ﻿using Common.Controls;
 using DA;
+using DevExpress.Data.Filtering;
 using DevExpress.XtraCharts;
 using System;
 using System.Linq;
@@ -355,6 +356,23 @@ namespace UI.CRM
         private void dockContractChartEvent_Expanded(object sender, DevExpress.XtraBars.Docking.DockPanelEventArgs e)
         {
             LoadCharts();
+        }
+
+        private void radg_Actions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.radg_Actions.SelectedIndex == 0)
+            {
+                this.grvContractList.ActiveFilterCriteria = CriteriaOperator.Parse("ContractProgressStatus >= 1");
+            }
+            if (this.radg_Actions.SelectedIndex == 1)
+            {
+                this.grvContractList.ActiveFilterCriteria = CriteriaOperator.Parse("ContractProgressStatus <= 4");
+            }
+            if (this.radg_Actions.SelectedIndex == 2)
+            {
+                this.grvContractList.ActiveFilterCriteria= CriteriaOperator.Parse("ContractProgressStatus >= 5");
+            }
+            
         }
     }
 }

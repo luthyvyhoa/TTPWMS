@@ -62,6 +62,7 @@
             this.columnSent = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumnEndDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.radg_Actions = new DevExpress.XtraEditors.RadioGroup();
             this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.grdContractList = new DevExpress.XtraGrid.GridControl();
             this.grvContractList = new Common.Controls.WMSGridView();
@@ -116,6 +117,7 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.grcBDEvents = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new Common.Controls.WMSGridView();
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -172,6 +174,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rbcbase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radg_Actions.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdContractList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grvContractList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rpi_hpl_Customer)).BeginInit();
@@ -189,6 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcBDEvents)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartContractProgressStatusByBDStaff)).BeginInit();
@@ -239,8 +243,8 @@
             // 
             // rbcbase
             // 
-            this.rbcbase.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.rbcbase.ExpandCollapseItem.Id = 0;
+            this.rbcbase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbcbase.OptionsCustomizationForm.FormIcon = ((System.Drawing.Icon)(resources.GetObject("resource.FormIcon")));
             // 
             // 
@@ -251,7 +255,7 @@
             this.rbcbase.SearchEditItem.Id = -5000;
             this.rbcbase.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.rbcbase.SearchEditItem.UseEditorPadding = false;
-            this.rbcbase.Size = new System.Drawing.Size(1782, 44);
+            this.rbcbase.Size = new System.Drawing.Size(1782, 35);
             // 
             // ColumnPriority
             // 
@@ -302,24 +306,43 @@
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.radg_Actions);
             this.layoutControl1.Controls.Add(this.btnRefresh);
             this.layoutControl1.Controls.Add(this.grdContractList);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 44);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 35);
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(805, 172, 812, 500);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1752, 757);
+            this.layoutControl1.Size = new System.Drawing.Size(1756, 766);
             this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // radg_Actions
+            // 
+            this.radg_Actions.Location = new System.Drawing.Point(6, 6);
+            this.radg_Actions.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.radg_Actions.MenuManager = this.rbcbase;
+            this.radg_Actions.Name = "radg_Actions";
+            this.radg_Actions.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.radg_Actions.Properties.ItemHorzAlignment = DevExpress.XtraEditors.RadioItemHorzAlignment.Far;
+            this.radg_Actions.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((short)(0)), "All"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((short)(1)), "New and Confirm"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((short)(2)), "Closed")});
+            this.radg_Actions.Properties.ItemsLayout = DevExpress.XtraEditors.RadioGroupItemsLayout.Flow;
+            this.radg_Actions.Size = new System.Drawing.Size(1744, 34);
+            this.radg_Actions.StyleController = this.layoutControl1;
+            this.radg_Actions.TabIndex = 16;
+            this.radg_Actions.SelectedIndexChanged += new System.EventHandler(this.radg_Actions_SelectedIndexChanged);
             // 
             // btnRefresh
             // 
             this.btnRefresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnRefresh.ImageOptions.SvgImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(1632, 707);
+            this.btnRefresh.Location = new System.Drawing.Point(1636, 726);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(114, 44);
+            this.btnRefresh.Size = new System.Drawing.Size(114, 34);
             this.btnRefresh.StyleController = this.layoutControl1;
             this.btnRefresh.TabIndex = 11;
             this.btnRefresh.Text = "Refresh";
@@ -327,8 +350,8 @@
             // 
             // grdContractList
             // 
-            this.grdContractList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(620, 4, 620, 4);
-            this.grdContractList.Location = new System.Drawing.Point(8, 8);
+            this.grdContractList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(531, 3, 531, 3);
+            this.grdContractList.Location = new System.Drawing.Point(8, 46);
             this.grdContractList.MainView = this.grvContractList;
             this.grdContractList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grdContractList.MenuManager = this.rbcbase;
@@ -344,7 +367,7 @@
             this.rpi_hpl_CustomerName,
             this.rpi_hpl_ShowFull,
             this.repositoryItemDateEdit1});
-            this.grdContractList.Size = new System.Drawing.Size(1736, 693);
+            this.grdContractList.Size = new System.Drawing.Size(1740, 674);
             this.grdContractList.TabIndex = 4;
             this.grdContractList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grvContractList});
@@ -874,20 +897,21 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem2,
-            this.emptySpaceItem2});
+            this.emptySpaceItem2,
+            this.layoutControlItem5});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 5;
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1752, 757);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1756, 766);
             this.layoutControlGroup1.Spacing = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.grdContractList;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 38);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1744, 701);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1748, 682);
             this.layoutControlItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -895,28 +919,37 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnRefresh;
-            this.layoutControlItem2.Location = new System.Drawing.Point(1626, 701);
+            this.layoutControlItem2.Location = new System.Drawing.Point(1630, 720);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(118, 48);
+            this.layoutControlItem2.Size = new System.Drawing.Size(118, 38);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 701);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 720);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(1626, 48);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(1630, 38);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.radg_Actions;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(1748, 38);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextVisible = false;
             // 
             // grcBDEvents
             // 
-            this.grcBDEvents.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
-            this.grcBDEvents.Location = new System.Drawing.Point(14, 354);
+            this.grcBDEvents.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8, 2, 8, 2);
+            this.grcBDEvents.Location = new System.Drawing.Point(14, 364);
             this.grcBDEvents.MainView = this.gridView1;
             this.grcBDEvents.MenuManager = this.rbcbase;
             this.grcBDEvents.Name = "grcBDEvents";
-            this.grcBDEvents.Size = new System.Drawing.Size(802, 333);
+            this.grcBDEvents.Size = new System.Drawing.Size(805, 343);
             this.grcBDEvents.TabIndex = 10;
             this.grcBDEvents.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1015,16 +1048,16 @@
         series2,
         series3,
         series4};
-            this.ChartContractProgressStatusByBDStaff.Size = new System.Drawing.Size(806, 336);
+            this.ChartContractProgressStatusByBDStaff.Size = new System.Drawing.Size(809, 346);
             this.ChartContractProgressStatusByBDStaff.TabIndex = 8;
             this.ChartContractProgressStatusByBDStaff.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ChartContractProgressStatusByBDStaff_MouseClick);
             // 
             // layoutGridBDEvents
             // 
             this.layoutGridBDEvents.Control = this.grcBDEvents;
-            this.layoutGridBDEvents.Location = new System.Drawing.Point(0, 340);
+            this.layoutGridBDEvents.Location = new System.Drawing.Point(0, 350);
             this.layoutGridBDEvents.Name = "layoutGridBDEvents";
-            this.layoutGridBDEvents.Size = new System.Drawing.Size(810, 341);
+            this.layoutGridBDEvents.Size = new System.Drawing.Size(813, 351);
             this.layoutGridBDEvents.Spacing = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
             this.layoutGridBDEvents.TextSize = new System.Drawing.Size(0, 0);
             this.layoutGridBDEvents.TextVisible = false;
@@ -1074,21 +1107,21 @@
             this.hideContainerRight.Controls.Add(this.dockPanelLatestActivities);
             this.hideContainerRight.Controls.Add(this.dockContractChartEvent);
             this.hideContainerRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.hideContainerRight.Location = new System.Drawing.Point(1752, 44);
+            this.hideContainerRight.Location = new System.Drawing.Point(1756, 35);
             this.hideContainerRight.Name = "hideContainerRight";
-            this.hideContainerRight.Size = new System.Drawing.Size(30, 757);
+            this.hideContainerRight.Size = new System.Drawing.Size(26, 766);
             // 
             // dockPanelContractValues
             // 
             this.dockPanelContractValues.Controls.Add(this.dockPanel1_Container);
             this.dockPanelContractValues.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanelContractValues.ID = new System.Guid("771b4cb6-6b62-471d-ba4c-8e589f701843");
-            this.dockPanelContractValues.Location = new System.Drawing.Point(712, 44);
+            this.dockPanelContractValues.Location = new System.Drawing.Point(716, 35);
             this.dockPanelContractValues.Name = "dockPanelContractValues";
             this.dockPanelContractValues.OriginalSize = new System.Drawing.Size(1040, 200);
             this.dockPanelContractValues.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanelContractValues.SavedIndex = 0;
-            this.dockPanelContractValues.Size = new System.Drawing.Size(1040, 757);
+            this.dockPanelContractValues.Size = new System.Drawing.Size(1040, 766);
             this.dockPanelContractValues.Text = "CONTRACT VALUE BY BD STAFF";
             this.dockPanelContractValues.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
             this.dockPanelContractValues.Expanded += new DevExpress.XtraBars.Docking.DockPanelEventHandler(this.dockPanelContractValues_Expanded);
@@ -1096,9 +1129,9 @@
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.layoutControl2);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(5, 52);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(3, 42);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(1031, 701);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(1034, 721);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // layoutControl2
@@ -1109,20 +1142,20 @@
             this.layoutControl2.Location = new System.Drawing.Point(0, 0);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroupDockContractValue;
-            this.layoutControl2.Size = new System.Drawing.Size(1031, 701);
+            this.layoutControl2.Size = new System.Drawing.Size(1034, 721);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "``";
             // 
             // grcCustomerListByBDStaff
             // 
-            this.grcCustomerListByBDStaff.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
-            this.grcCustomerListByBDStaff.Location = new System.Drawing.Point(12, 393);
+            this.grcCustomerListByBDStaff.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8, 2, 8, 2);
+            this.grcCustomerListByBDStaff.Location = new System.Drawing.Point(12, 404);
             this.grcCustomerListByBDStaff.MainView = this.grvCustomerListByBDStaff;
             this.grcCustomerListByBDStaff.MenuManager = this.rbcbase;
             this.grcCustomerListByBDStaff.Name = "grcCustomerListByBDStaff";
             this.grcCustomerListByBDStaff.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rpe_hle_CustomerID});
-            this.grcCustomerListByBDStaff.Size = new System.Drawing.Size(1007, 296);
+            this.grcCustomerListByBDStaff.Size = new System.Drawing.Size(1010, 305);
             this.grcCustomerListByBDStaff.TabIndex = 10;
             this.grcCustomerListByBDStaff.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grvCustomerListByBDStaff});
@@ -1240,7 +1273,7 @@
             this.chartContractListByBDStaff.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series5,
         series6};
-            this.chartContractListByBDStaff.Size = new System.Drawing.Size(1003, 373);
+            this.chartContractListByBDStaff.Size = new System.Drawing.Size(1006, 384);
             this.chartContractListByBDStaff.TabIndex = 9;
             this.chartContractListByBDStaff.Click += new System.EventHandler(this.chartContractListByBDStaff_Click);
             this.chartContractListByBDStaff.MouseClick += new System.Windows.Forms.MouseEventHandler(this.chartContractListByBDStaff_MouseClick);
@@ -1253,7 +1286,7 @@
             this.layoutControlItem6,
             this.layoutControlItem3});
             this.layoutControlGroupDockContractValue.Name = "layoutControlGroupDockContractValue";
-            this.layoutControlGroupDockContractValue.Size = new System.Drawing.Size(1031, 701);
+            this.layoutControlGroupDockContractValue.Size = new System.Drawing.Size(1034, 721);
             this.layoutControlGroupDockContractValue.TextVisible = false;
             // 
             // layoutControlItem6
@@ -1262,7 +1295,7 @@
             this.layoutControlItem6.CustomizationFormText = "layoutControlItem3";
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(1011, 381);
+            this.layoutControlItem6.Size = new System.Drawing.Size(1014, 392);
             this.layoutControlItem6.Spacing = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
             this.layoutControlItem6.Text = "layoutControlItem3";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
@@ -1271,9 +1304,9 @@
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.grcCustomerListByBDStaff;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 381);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 392);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(1011, 300);
+            this.layoutControlItem3.Size = new System.Drawing.Size(1014, 309);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
@@ -1282,12 +1315,12 @@
             this.dockPanelLatestActivities.Controls.Add(this.dockPanel3_Container);
             this.dockPanelLatestActivities.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanelLatestActivities.ID = new System.Guid("9a86188f-8470-4e50-bad3-5f9ca3c26040");
-            this.dockPanelLatestActivities.Location = new System.Drawing.Point(357, 44);
+            this.dockPanelLatestActivities.Location = new System.Drawing.Point(361, 35);
             this.dockPanelLatestActivities.Name = "dockPanelLatestActivities";
             this.dockPanelLatestActivities.OriginalSize = new System.Drawing.Size(1395, 200);
             this.dockPanelLatestActivities.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanelLatestActivities.SavedIndex = 1;
-            this.dockPanelLatestActivities.Size = new System.Drawing.Size(1395, 757);
+            this.dockPanelLatestActivities.Size = new System.Drawing.Size(1395, 766);
             this.dockPanelLatestActivities.Text = "LATEST SOLOMON UPDATES";
             this.dockPanelLatestActivities.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
             this.dockPanelLatestActivities.Expanded += new DevExpress.XtraBars.Docking.DockPanelEventHandler(this.dockPanelLatestActivities_Expanded);
@@ -1295,20 +1328,20 @@
             // dockPanel3_Container
             // 
             this.dockPanel3_Container.Controls.Add(this.grcSolomonData);
-            this.dockPanel3_Container.Location = new System.Drawing.Point(5, 52);
+            this.dockPanel3_Container.Location = new System.Drawing.Point(3, 42);
             this.dockPanel3_Container.Name = "dockPanel3_Container";
-            this.dockPanel3_Container.Size = new System.Drawing.Size(1386, 701);
+            this.dockPanel3_Container.Size = new System.Drawing.Size(1389, 721);
             this.dockPanel3_Container.TabIndex = 0;
             // 
             // grcSolomonData
             // 
             this.grcSolomonData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grcSolomonData.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(10, 4, 10, 4);
+            this.grcSolomonData.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8, 2, 8, 2);
             this.grcSolomonData.Location = new System.Drawing.Point(0, 0);
             this.grcSolomonData.MainView = this.grvSolomonCheckData;
             this.grcSolomonData.MenuManager = this.rbcbase;
             this.grcSolomonData.Name = "grcSolomonData";
-            this.grcSolomonData.Size = new System.Drawing.Size(1386, 701);
+            this.grcSolomonData.Size = new System.Drawing.Size(1389, 721);
             this.grcSolomonData.TabIndex = 0;
             this.grcSolomonData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grvSolomonCheckData});
@@ -1464,12 +1497,12 @@
             this.dockContractChartEvent.Controls.Add(this.controlContainer1);
             this.dockContractChartEvent.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockContractChartEvent.ID = new System.Guid("9bee95be-739d-4ee3-b4f7-24b5f72b44d7");
-            this.dockContractChartEvent.Location = new System.Drawing.Point(913, 44);
+            this.dockContractChartEvent.Location = new System.Drawing.Point(917, 35);
             this.dockContractChartEvent.Name = "dockContractChartEvent";
             this.dockContractChartEvent.OriginalSize = new System.Drawing.Size(839, 200);
             this.dockContractChartEvent.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockContractChartEvent.SavedIndex = 0;
-            this.dockContractChartEvent.Size = new System.Drawing.Size(839, 757);
+            this.dockContractChartEvent.Size = new System.Drawing.Size(839, 766);
             this.dockContractChartEvent.Text = "CHART BY STAFF";
             this.dockContractChartEvent.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
             this.dockContractChartEvent.Expanded += new DevExpress.XtraBars.Docking.DockPanelEventHandler(this.dockContractChartEvent_Expanded);
@@ -1477,9 +1510,9 @@
             // controlContainer1
             // 
             this.controlContainer1.Controls.Add(this.layoutControl3);
-            this.controlContainer1.Location = new System.Drawing.Point(5, 52);
+            this.controlContainer1.Location = new System.Drawing.Point(3, 42);
             this.controlContainer1.Name = "controlContainer1";
-            this.controlContainer1.Size = new System.Drawing.Size(830, 701);
+            this.controlContainer1.Size = new System.Drawing.Size(833, 721);
             this.controlContainer1.TabIndex = 0;
             // 
             // layoutControl3
@@ -1490,7 +1523,7 @@
             this.layoutControl3.Location = new System.Drawing.Point(0, 0);
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.Root = this.layoutControlGroup2;
-            this.layoutControl3.Size = new System.Drawing.Size(830, 701);
+            this.layoutControl3.Size = new System.Drawing.Size(833, 721);
             this.layoutControl3.TabIndex = 0;
             this.layoutControl3.Text = "layoutControl3";
             // 
@@ -1502,7 +1535,7 @@
             this.layoutControlItem4,
             this.layoutGridBDEvents});
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(830, 701);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(833, 721);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem4
@@ -1510,7 +1543,7 @@
             this.layoutControlItem4.Control = this.ChartContractProgressStatusByBDStaff;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(810, 340);
+            this.layoutControlItem4.Size = new System.Drawing.Size(813, 350);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -1558,7 +1591,8 @@
             // 
             // frm_CRM_ContractList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.Appearance.Options.UseFont = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1782, 801);
             this.Controls.Add(this.layoutControl1);
@@ -1576,6 +1610,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rbcbase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radg_Actions.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdContractList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grvContractList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rpi_hpl_Customer)).EndInit();
@@ -1593,6 +1628,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcBDEvents)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
@@ -1763,5 +1799,7 @@
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn43;
+        private DevExpress.XtraEditors.RadioGroup radg_Actions;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
     }
 }
