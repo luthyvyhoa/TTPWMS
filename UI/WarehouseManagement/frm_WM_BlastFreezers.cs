@@ -574,16 +574,16 @@ namespace UI.WarehouseManagement
             {
                 if (MessageBox.Show("Are you sure to delete this record ?", "TPWMS", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    //DataProcess<BlastFreezers> blastFreezersDA = new DataProcess<BlastFreezers>();
-                    //int resultDelete = blastFreezersDA.ExecuteNoQuery("DELETE FROM BlastFreezers WHERE BlastFreezerID = {0}", currentBlastFreezers.BlastFreezerID);
+					DataProcess<BlastFreezers> blastFreezersDA = new DataProcess<BlastFreezers>();
+					int resultDelete = blastFreezersDA.ExecuteNoQuery("DELETE FROM BlastFreezers WHERE BlastFreezerID = {0}", currentBlastFreezers.BlastFreezerID);
 
-                    ////Loại lại dữ liệu cho form
-                    //DateTime comparedTimeValue = DateTime.Now.AddDays(-31);
-                    //blastFreezersList = blastFreezersDA.Select(bf => (bf.DateIn.CompareTo(comparedTimeValue)) > 0).ToList();
+					//Loại lại dữ liệu cho form
+					DateTime comparedTimeValue = DateTime.Now.AddDays(-31);
+					blastFreezersList = blastFreezersDA.Select(bf => (bf.DateIn.CompareTo(comparedTimeValue)) > 0).ToList();
 
-                    //dtngBlastFreezers.DataSource = blastFreezersList;
-                    //dtngBlastFreezers.Position = blastFreezersList.Count;
-                }
+					dtngBlastFreezers.DataSource = blastFreezersList;
+					dtngBlastFreezers.Position = blastFreezersList.Count;
+				}
             }
 
         }
@@ -640,31 +640,33 @@ namespace UI.WarehouseManagement
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            int BlastFreezeID = Convert.ToInt32(Convert.ToString(txtBlastFreezerRecordNumber.Text).Substring(3));
-            DataProcess<STCustomerRequirementPrint_Result> printISO = new DataProcess<STCustomerRequirementPrint_Result>();
-            int receivingOrderID = BlastFreezeID;
-          //  int customerID = Convert.ToInt32(lkeCustomerNumber.EditValue);
+            if(!txtBlastFreezerRecordNumber.Text.Equals(""))
+			{
+                int BlastFreezeID = Convert.ToInt32(Convert.ToString(txtBlastFreezerRecordNumber.Text).Substring(3));
+                DataProcess<STCustomerRequirementPrint_Result> printISO = new DataProcess<STCustomerRequirementPrint_Result>();
+                int receivingOrderID = BlastFreezeID;
+                //  int customerID = Convert.ToInt32(lkeCustomerNumber.EditValue);
 
-            Customers customerSelected = daCustomer.Executing("SELECT * FROM dbo.Customers WHERE StoreID=" + AppSetting.CurrentUser.StoreID).Where(x=>x.CustomerNumber==Convert.ToString(lkeCustomerNumber.EditValue)).FirstOrDefault();
-            // .Where(x => x.CustomerID == customerID).FirstOrDefault();
-            if(customerSelected==null)
-            {
-                MessageBox.Show("Can't Customer", "TPWMS", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            int customerMainIDISO = Convert.ToInt32(customerSelected.CustomerMainID);
-            int customerID = customerSelected.CustomerID;
-            // init datasource
-            List<STCustomerRequirementPrint_Result> dataPrintISOList = printISO.Executing("STCustomerRequirementPrint @CustomerMainID={0}, @Flag={1}, @ReceivingOrderID={2}", customerMainIDISO, 3, receivingOrderID).ToList();
-            dataPrintISOList = dataPrintISOList.OrderByDescending(a => a.CustomerRequirementID).ToList();
-            STCustomerRequirementPrint_Result dataPrintISO = dataPrintISOList.FirstOrDefault();
-            //Customers customer = listCustomer.FirstOrDefault(c => c.CustomerID == customerID);
-            StringBuilder strRequirementDetails = new StringBuilder();
-            foreach (var item in dataPrintISOList)
-            {
-                strRequirementDetails.Append(item.RequirementDetails + Environment.NewLine);
-            }
-            ReportPrintToolWMS printTool = null;
+                Customers customerSelected = daCustomer.Executing("SELECT * FROM dbo.Customers WHERE StoreID=" + AppSetting.CurrentUser.StoreID).Where(x => x.CustomerNumber == Convert.ToString(lkeCustomerNumber.EditValue)).FirstOrDefault();
+                // .Where(x => x.CustomerID == customerID).FirstOrDefault();
+                if (customerSelected == null)
+                {
+                    MessageBox.Show("Can't Customer", "TPWMS", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                int customerMainIDISO = Convert.ToInt32(customerSelected.CustomerMainID);
+                int customerID = customerSelected.CustomerID;
+                // init datasource
+                List<STCustomerRequirementPrint_Result> dataPrintISOList = printISO.Executing("STCustomerRequirementPrint @CustomerMainID={0}, @Flag={1}, @ReceivingOrderID={2}", customerMainIDISO, 3, receivingOrderID).ToList();
+                dataPrintISOList = dataPrintISOList.OrderByDescending(a => a.CustomerRequirementID).ToList();
+                STCustomerRequirementPrint_Result dataPrintISO = dataPrintISOList.FirstOrDefault();
+                //Customers customer = listCustomer.FirstOrDefault(c => c.CustomerID == customerID);
+                StringBuilder strRequirementDetails = new StringBuilder();
+                foreach (var item in dataPrintISOList)
+                {
+                    strRequirementDetails.Append(item.RequirementDetails + Environment.NewLine);
+                }
+                ReportPrintToolWMS printTool = null;
 
                 rptBlastFreezreISO rpt = new rptBlastFreezreISO();
                 Match rsStartLoadingTime = re.Match(saveCurrentBlastFreezers.StartLoadingTime.ToString());
@@ -676,7 +678,7 @@ namespace UI.WarehouseManagement
                 Match rsStartRunTime = re.Match(saveCurrentBlastFreezers.StartRunTime.ToString());
                 Match rsEndRunTime = re.Match(saveCurrentBlastFreezers.EndRunTime.ToString());
 
-                rpt.Parameters["varNgay"].Value = saveCurrentBlastFreezers.DateIn.ToShortDateString() ;
+                rpt.Parameters["varNgay"].Value = saveCurrentBlastFreezers.DateIn.ToShortDateString();
                 rpt.Parameters["varCustomer"].Value = txtCustomerName.Text;
                 rpt.Parameters["varRO"].Value = txtRO.Text;
                 rpt.Parameters["varStart"].Value = rsStartLoadingTime.ToString();
@@ -687,7 +689,7 @@ namespace UI.WarehouseManagement
                 rpt.Parameters["varEndAt"].Value = rsEndRunTime.ToString();
                 rpt.Parameters["tempIn"].Value = Convert.ToDecimal(saveCurrentBlastFreezers.TempIn);
                 rpt.Parameters["tempOut"].Value = Convert.ToDecimal(saveCurrentBlastFreezers.TempOut);
-            
+
                 rpt.Parameters["varBF"].Value = Convert.ToString(saveCurrentBlastFreezers.BlastFreezerID);
                 rpt.Parameters["varEmployee"].Value = txtBlastFreezerLoadingBy.Text;
                 rpt.Parameters["varName"].Value = meRemark.Text;
@@ -698,9 +700,16 @@ namespace UI.WarehouseManagement
 
                 rpt.RequestParameters = false;
                 printTool = new ReportPrintToolWMS(rpt);
-            printTool.AutoShowParametersPanel = false;
-            printTool.ShowPreview();
-            
+                printTool.AutoShowParametersPanel = false;
+                printTool.ShowPreview();
+
+            }
+            else
+			{
+                MessageBox.Show("Don't save  Blast Freezer", "TPWMS", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+           
 
 
         }

@@ -1067,5 +1067,38 @@ namespace UI.ReportForm
             form.ReceivingOrderIDFind = ReceivingOrderID;
             form.Show();
         }
+
+        private void btnExportExcel_Click(object sender, EventArgs e)
+        {
+            var pivotExportOptions = new DevExpress.XtraPivotGrid.PivotXlsxExportOptions();
+            pivotExportOptions.ExportType = DevExpress.Export.ExportType.DataAware;
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Excel 97-2003 (*.xls)|*.xls|Excel 07-2010 (*.xlsx)|*.xlsx";
+
+            DialogResult dr = sfd.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                this.grcInOutAllProducts.ExportToXlsx(sfd.FileName, pivotExportOptions);
+                try
+                {
+                    System.Diagnostics.Process.Start("Excel", sfd.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            sfd.Dispose();
+        }
+
+        private void lkeCustomerNumber_EditValueChanged(object sender, EventArgs e)
+        {
+            checkShowAllInOutProducts.Checked = false;
+        }
+
+        private void dLocationDate_EditValueChanged(object sender, EventArgs e)
+        {
+            checkShowAllInOutProducts.Checked = false;
+        }
     }
 }

@@ -949,7 +949,7 @@ namespace UI.MasterSystemSetup
 
         private void Btn_MSS_Contracts_Update_Click(object sender, EventArgs e)
         {
-            if (this.lkeContractStatus.EditValue == null || this.lkeContractStatus.EditValue.Equals(0))
+            if (this.lkeContractStatus.EditValue == null || Convert.ToInt32(this.lkeContractStatus.EditValue.ToString()) == 0)
             {
                 this.lkeContractStatus.Focus();
                 this.lkeContractStatus.ShowPopup();
@@ -977,8 +977,6 @@ namespace UI.MasterSystemSetup
                 return;
             }
 
-
-
             if (string.IsNullOrEmpty(this.txtProductMaxValue.Text) || Convert.ToDecimal(this.txtProductMaxValue.Text) <= 5000)
             {
                 DevExpress.XtraEditors.XtraMessageBox.Show("Product Max Value is incorrect, Product Max Value > 5000 !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -999,6 +997,17 @@ namespace UI.MasterSystemSetup
                     //Update Contract
                     int contractID = Convert.ToInt32(this.txtContractID.Text);
                     Contracts currentContract = contractsData.Select(x => x.ContractID == contractID).FirstOrDefault();
+                    if (Convert.ToInt32(this.lkeContractStatus.EditValue.ToString()) == 6 && currentContract.ContractProgressStatus != 6)
+                    {
+                        if (MessageBox.Show("Phòng kinh doanh kiểm tra lại kĩ trước khi thực hiện thao tác này!", "TPWMS", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.Cancel)
+                        {
+                            this.lkeContractStatus.Focus();
+                            this.lkeContractStatus.ShowPopup();
+                            Wait.Close();
+                            return;
+                        }
+                    }
+                    
                     this.GetContract(currentContract);
 
                     int result = contractsData.Update(currentContract);
@@ -1796,8 +1805,6 @@ namespace UI.MasterSystemSetup
 
         private void lkeAccountingStatus_EditValueChanged(object sender, EventArgs e)
         {
-
-
             if (this.lkeAccountingStatus.EditValue == null) return;
             this.textAccountingUpdateBy.EditValue = AppSetting.CurrentUser.LoginName;
             this.textAccountingUpdateTime.EditValue = DateTime.Now;
@@ -1985,10 +1992,9 @@ namespace UI.MasterSystemSetup
 
         private void lkeAccountingStatus_EditValueChanging(object sender, ChangingEventArgs e)
         {
-            if (!lkeAccountingStatus.IsModified) return;
-            if (Convert.ToInt32(e.NewValue) > 1 && Convert.ToInt32(this.lkeContractStatus.EditValue) < 4)
+            if (Convert.ToInt32(e.NewValue) > 1 && (Convert.ToInt32(this.lkeContractStatus.EditValue.ToString()) == 1 || Convert.ToInt32(this.lkeContractStatus.EditValue.ToString()) == 2 || Convert.ToInt32(this.lkeContractStatus.EditValue.ToString()) == 4))
             {
-                MessageBox.Show("Please changed contract status before release contract!", "TPWMS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please confirm contract before release!", "TPWMS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
             }
         }

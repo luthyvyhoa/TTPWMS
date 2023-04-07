@@ -37,8 +37,7 @@ namespace UI.Management
             this.rpi_btn_OpenDate.Click += Rpi_btn_OpenDate_Click;
             this.btnReport.Click += BtnReport_Click;
             this.btnRefresh.Click += BtnRefresh_Click;
-            this.btnWeekly.Click += BtnWeekly_Click;
-            this.btnDaily.Click += BtnDaily_Click;
+           
         }
 
         private void DtFrom_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -47,6 +46,7 @@ namespace UI.Management
             {
                 e.Cancel = true;
             }
+
         }
 
         private void DtTo_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -55,6 +55,7 @@ namespace UI.Management
             {
                 e.Cancel = true;
             }
+
         }
 
         private void Rpi_btn_OpenDate_Click(object sender, EventArgs e)
@@ -90,6 +91,19 @@ namespace UI.Management
         private void LoadSummary()
         {
             this.grdSummary.DataSource = FileProcess.LoadTable("STInOutViewSummary @varFromdate = '"+this.dtFrom.DateTime.ToString("yyyy-MM-dd")+ "', @varTodate = '" + this.dtTo.DateTime.ToString("yyyy-MM-dd") + "', @varStoreID = " + AppSetting.StoreID);
+        }
+
+		private void dtTo_EditValueChanged(object sender, EventArgs e)
+		{
+            LoadSummary();
+
+
+        }
+
+        private void dtFrom_EditValueChanged(object sender, EventArgs e)
+		{
+            LoadSummary();
+
         }
     }
 }

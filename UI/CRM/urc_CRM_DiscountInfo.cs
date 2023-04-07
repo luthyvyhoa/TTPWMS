@@ -10,6 +10,7 @@ using System.Data;
 using System.Collections.Generic;
 using static DevExpress.Utils.Drawing.Helpers.NativeMethods;
 using System.ComponentModel;
+using DevExpress.DataProcessing;
 
 namespace UI.CRM
 {
@@ -233,6 +234,9 @@ namespace UI.CRM
             foreach (var obj in _lstDicountDelete)
             {
                 _DiscountDA.Delete(this._DiscountDA.Select(x => x.DiscountID == obj).FirstOrDefault());
+                _lstDicountDelete.Remove(obj);
+                if (_lstDicountDelete.Count <= 0) break;
+                
             }
             if (this._currentDiscountCooperations.ID > 0)
             {
