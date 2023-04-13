@@ -1101,7 +1101,7 @@
             // 
             // ribbonControl8
             // 
-            this.ribbonControl8.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl8.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl8.ExpandCollapseItem.Id = 0;
             this.ribbonControl8.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl8.ExpandCollapseItem,
@@ -1401,7 +1401,7 @@
             // 
             // ribbonControl6
             // 
-            this.ribbonControl6.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl6.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl6.ExpandCollapseItem.Id = 0;
             this.ribbonControl6.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl6.ExpandCollapseItem,
@@ -1701,7 +1701,7 @@
             // 
             // ribbonControl7
             // 
-            this.ribbonControl7.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl7.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl7.ExpandCollapseItem.Id = 0;
             this.ribbonControl7.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl7.ExpandCollapseItem,
@@ -2001,7 +2001,7 @@
             // 
             // ribbonControl5
             // 
-            this.ribbonControl5.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl5.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl5.ExpandCollapseItem.Id = 0;
             this.ribbonControl5.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl5.ExpandCollapseItem,
@@ -2301,7 +2301,7 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -2601,7 +2601,7 @@
             // 
             // ribbonControl2
             // 
-            this.ribbonControl2.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl2.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl2.ExpandCollapseItem.Id = 0;
             this.ribbonControl2.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl2.ExpandCollapseItem,
@@ -2901,7 +2901,7 @@
             // 
             // ribbonControl4
             // 
-            this.ribbonControl4.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl4.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl4.ExpandCollapseItem.Id = 0;
             this.ribbonControl4.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl4.ExpandCollapseItem,
@@ -3201,7 +3201,7 @@
             // 
             // ribbonControl3
             // 
-            this.ribbonControl3.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl3.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl3.ExpandCollapseItem.Id = 0;
             this.ribbonControl3.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl3.ExpandCollapseItem,
@@ -3502,7 +3502,7 @@
             // ReivingOrderRibon
             // 
             this.ReivingOrderRibon.CaptionBarItemLinks.Add(this.ribbonGalleryBarItem1);
-            this.ReivingOrderRibon.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ReivingOrderRibon.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ReivingOrderRibon.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ReivingOrderRibon.ExpandCollapseItem.Id = 0;
             this.ReivingOrderRibon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -4442,7 +4442,7 @@
             // 
             // ribbonControl9
             // 
-            this.ribbonControl9.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl9.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl9.ExpandCollapseItem.Id = 0;
             this.ribbonControl9.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl9.ExpandCollapseItem,
@@ -4742,7 +4742,7 @@
             // 
             // ribbonControl10
             // 
-            this.ribbonControl10.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl10.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl10.ExpandCollapseItem.Id = 0;
             this.ribbonControl10.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl10.ExpandCollapseItem,
@@ -5042,7 +5042,7 @@
             // 
             // ribbonControl11
             // 
-            this.ribbonControl11.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl11.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl11.ExpandCollapseItem.Id = 0;
             this.ribbonControl11.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl11.ExpandCollapseItem,
@@ -5342,7 +5342,7 @@
             // 
             // ribbonControl12
             // 
-            this.ribbonControl12.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl12.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl12.ExpandCollapseItem.Id = 0;
             this.ribbonControl12.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl12.ExpandCollapseItem,
@@ -5987,7 +5987,7 @@
             // gridColumn47
             // 
             this.gridColumn47.Caption = "M.Barcode";
-            this.gridColumn47.FieldName = "CartonManufacturingBarcode";
+            this.gridColumn47.FieldName = "CartonManufacturingBarcodeF";
             this.gridColumn47.MinWidth = 24;
             this.gridColumn47.Name = "gridColumn47";
             this.gridColumn47.Visible = true;
@@ -7282,7 +7282,7 @@
             // 
             // ribbonControl14
             // 
-            this.ribbonControl14.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl14.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl14.ExpandCollapseItem.Id = 0;
             this.ribbonControl14.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl14.ExpandCollapseItem,
@@ -7602,7 +7602,7 @@
             // 
             // ribbonControl13
             // 
-            this.ribbonControl13.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl13.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl13.ExpandCollapseItem.Id = 0;
             this.ribbonControl13.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl13.ExpandCollapseItem,
@@ -8687,7 +8687,7 @@
             // 
             // ribbonControl16
             // 
-            this.ribbonControl16.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl16.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl16.ExpandCollapseItem.Id = 0;
             this.ribbonControl16.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl16.ExpandCollapseItem,
@@ -8987,7 +8987,7 @@
             // 
             // ribbonControl17
             // 
-            this.ribbonControl17.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl17.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl17.ExpandCollapseItem.Id = 0;
             this.ribbonControl17.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl17.ExpandCollapseItem,
@@ -9287,7 +9287,7 @@
             // 
             // ribbonControl15
             // 
-            this.ribbonControl15.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Blue;
+            this.ribbonControl15.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl15.ExpandCollapseItem.Id = 0;
             this.ribbonControl15.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl15.ExpandCollapseItem,

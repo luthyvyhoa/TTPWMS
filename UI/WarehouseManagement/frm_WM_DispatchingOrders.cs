@@ -1644,11 +1644,7 @@ namespace UI.WarehouseManagement
             // Check the controls on form is allow active
             if (!this.isLockOrder)
             {
-                int totalDetailConfirm = this.listOrderDetail.Count(dp => dp.Status == 2);
-                if (totalDetailConfirm == this.listOrderDetail.Count) 
-                    isReadOnly = true;
-                else
-                    isReadOnly = false;
+                isReadOnly = false;
             }
 
             this.lookUpEditCustomerID.Properties.ReadOnly = isReadOnly;

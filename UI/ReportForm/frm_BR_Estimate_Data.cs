@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,17 @@ namespace UI.ReportForm
             dataSource = DA.FileProcess.LoadTable("SPBillingEstimationsSelectFromDateToDate  @FromDate='" + dtFromDate.ToString("yyyy-M-dd") + "', @ToDate='" + dtToDate.ToString("yyyy-M-dd") + "'");
             if (!string.IsNullOrEmpty(customerSelect))
             {
-                dataSource = dataSource.Select("CustomerNumber in (" + customerSelect + ")").CopyToDataTable();
-            }
                 
+                try
+                {
+                    dataSource = dataSource.Select("CustomerNumber in (" + customerSelect + ")").CopyToDataTable();
+                }
+                catch (Exception e)
+                {
+                    XtraMessageBox.Show("No data to show !", "TPWMS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
             grdEstimate_Data.DataSource = dataSource;
         }
 

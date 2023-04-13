@@ -571,6 +571,8 @@
             this.gridColumn52.FieldName = "WarningDate";
             this.gridColumn52.MinWidth = 19;
             this.gridColumn52.Name = "gridColumn52";
+            this.gridColumn52.Visible = true;
+            this.gridColumn52.VisibleIndex = 15;
             this.gridColumn52.Width = 71;
             // 
             // gridColumn53

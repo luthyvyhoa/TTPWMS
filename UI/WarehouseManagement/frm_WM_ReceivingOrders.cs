@@ -244,7 +244,7 @@ namespace UI.WarehouseManagement
         /// </summary>
         private void SetPermissionControl(string functionName)
         {
-            var actionsList = FileProcess.LoadTable("STGetGrantActionOnFunctionByUser @LoginName='" + AppSetting.CurrentUser.LoginName + "',@FormName='"+ functionName + "'");
+            var actionsList = FileProcess.LoadTable("STGetGrantActionOnFunctionByUser @LoginName='" + AppSetting.CurrentUser.LoginName + "',@FormName='" + functionName + "'");
             foreach (Control item in frm_WM_ReceivingOrders.Instance.ReivingOrderRibon.Items)
             {
             }
@@ -581,7 +581,7 @@ namespace UI.WarehouseManagement
                 {// Send email notify when user change service to Internal Movement Free
                     if (this.lookUpEditHandlingOvertimeCategoryID.EditValue != null && Convert.ToInt32(this.lookUpEditHandlingOvertimeCategoryID.EditValue) == 346)
                     {
-                        var msgConfirm=MessageBox.Show("Chọn dịch vụ không tính phí sẽ được gửi thông tin đến giám sát, bạn có muốn chọn dịch vụ này ?", "TWMS", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        var msgConfirm = MessageBox.Show("Chọn dịch vụ không tính phí sẽ được gửi thông tin đến giám sát, bạn có muốn chọn dịch vụ này ?", "TWMS", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                         if (msgConfirm.Equals(DialogResult.No))
                         {
                             this.lookUpEditHandlingOvertimeCategoryID.EditValue = null;
@@ -611,7 +611,7 @@ namespace UI.WarehouseManagement
                         txtBody.Append(Environment.NewLine);
                         txtBody.Append("Thời gian tạo:");
                         txtBody.Append(DateTime.Now);
-                        string body =this.textEditCustomerOrderNumber.Text  +" ";
+                        string body = this.textEditCustomerOrderNumber.Text + " ";
                         IList<string> attach = new List<string>();
                         Common.Process.DataTransfer.SendMail("thetrung@necs.vn;", "TWMS Thay đổi dịch vụ không tính phí", txtBody.ToString(), attach.ToArray());
                         UpdateRO();
@@ -622,7 +622,7 @@ namespace UI.WarehouseManagement
                     }
                 }
 
-                
+
             }
             catch (Exception ex)
             {
@@ -1234,11 +1234,7 @@ namespace UI.WarehouseManagement
             // Check the controls on form is allow active
             if (!this.isLockOrder)
             {
-                int totalDetailConfirm = this.listOrderDetail.Count(dp => dp.Status == 2);
-                if (totalDetailConfirm == this.listOrderDetail.Count)
-                    isReadOnly = true;
-                else
-                    isReadOnly = false;
+                isReadOnly = false;
             }
 
             this.lookUpEditCustomerID.ReadOnly = isReadOnly;
@@ -1734,7 +1730,7 @@ namespace UI.WarehouseManagement
                     }
                     else
                     {
-                        XtraMessageBox.Show("RO had confirmed!,You couldn't delete it", "TPWMS",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        XtraMessageBox.Show("RO had confirmed!,You couldn't delete it", "TPWMS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         //if user then return
                         //if AppSetting.CurrentUser.LevelOfAuthorization
                         //bool isSupervisor = UserPermission.CheckSupervisorByDepartment(AppSetting.CurrentUser.LoginName, 4);

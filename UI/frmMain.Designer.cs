@@ -31,31 +31,31 @@ namespace UI
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem9 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem10 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem20 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem11 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip24 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem21 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip25 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip26 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem22 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip27 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem23 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip28 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem24 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip29 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem25 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip30 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem26 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip31 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem27 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip32 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem28 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip33 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
             this.rpi_txtSearch = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.repositoryItemHyperLinkEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit();
             this.rpi_hpl_Logout = new DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit();
@@ -663,12 +663,12 @@ namespace UI
             this.barEditItem4.Edit = this.rpi_hpl_Logout;
             this.barEditItem4.Id = 9;
             this.barEditItem4.Name = "barEditItem4";
-            toolTipTitleItem1.Text = "Warning";
-            toolTipItem1.LeftIndent = 6;
-            toolTipItem1.Text = "Logout current account";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            superToolTip1.Items.Add(toolTipItem1);
-            this.barEditItem4.SuperTip = superToolTip1;
+            toolTipTitleItem20.Text = "Warning";
+            toolTipItem3.LeftIndent = 6;
+            toolTipItem3.Text = "Logout current account";
+            superToolTip12.Items.Add(toolTipTitleItem20);
+            superToolTip12.Items.Add(toolTipItem3);
+            this.barEditItem4.SuperTip = superToolTip12;
             // 
             // btn_WR_CloseStock
             // 
@@ -1183,12 +1183,12 @@ namespace UI
             this.acd_item_CongViec});
             this.acd_CauHinh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_CauHinh.ImageOptions.SvgImage")));
             this.acd_CauHinh.Name = "acd_CauHinh";
-            toolTipTitleItem2.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem2.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem2.Icon")));
-            toolTipTitleItem2.Text = "Thông tin cấu hình chung";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.acd_CauHinh.SuperTip = superToolTip2;
+            toolTipTitleItem11.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem11.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem11.Icon")));
+            toolTipTitleItem11.Text = "Thông tin cấu hình chung";
+            superToolTip13.Items.Add(toolTipTitleItem11);
+            this.acd_CauHinh.SuperTip = superToolTip13;
             this.acd_CauHinh.Text = "Cấu Hình";
             this.acd_CauHinh.Visible = false;
             // 
@@ -1299,14 +1299,15 @@ namespace UI
             this.acd_item_KhachDatHang,
             this.acd_item_DoiTrangThaiKe,
             this.acd_item_KiemQuayDau});
+            this.acd_Kho.Expanded = true;
             this.acd_Kho.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_Kho.ImageOptions.SvgImage")));
             this.acd_Kho.Name = "acd_Kho";
-            toolTipTitleItem3.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem3.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem3.Icon")));
-            toolTipTitleItem3.Text = "Hoạt động xuất nhập kho";
-            superToolTip3.Items.Add(toolTipTitleItem3);
-            this.acd_Kho.SuperTip = superToolTip3;
+            toolTipTitleItem21.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem21.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem21.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem21.Icon")));
+            toolTipTitleItem21.Text = "Hoạt động xuất nhập kho";
+            superToolTip24.Items.Add(toolTipTitleItem21);
+            this.acd_Kho.SuperTip = superToolTip24;
             this.acd_Kho.Text = "Kho";
             this.acd_Kho.Visible = false;
             // 
@@ -1518,12 +1519,12 @@ namespace UI
             this.acd_item_HangHetHang});
             this.acd_BCKho.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_BCKho.ImageOptions.SvgImage")));
             this.acd_BCKho.Name = "acd_BCKho";
-            toolTipItem2.Appearance.Options.UseTextOptions = true;
-            toolTipItem2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipItem2.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipItem2.Icon")));
-            toolTipItem2.Text = "Báo cáo hoạt động xuất nhập hàng";
-            superToolTip4.Items.Add(toolTipItem2);
-            this.acd_BCKho.SuperTip = superToolTip4;
+            toolTipItem4.Appearance.Options.UseTextOptions = true;
+            toolTipItem4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipItem4.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipItem4.Icon")));
+            toolTipItem4.Text = "Báo cáo hoạt động xuất nhập hàng";
+            superToolTip25.Items.Add(toolTipItem4);
+            this.acd_BCKho.SuperTip = superToolTip25;
             this.acd_BCKho.Text = "Báo Cáo Kho";
             this.acd_BCKho.Visible = false;
             // 
@@ -1697,12 +1698,12 @@ namespace UI
             this.acd_item_KiemTraBill});
             this.acd_BCHD.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_BCHD.ImageOptions.SvgImage")));
             this.acd_BCHD.Name = "acd_BCHD";
-            toolTipTitleItem4.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem4.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem4.Icon")));
-            toolTipTitleItem4.Text = "Báo cáo chứng từ, bill";
-            superToolTip5.Items.Add(toolTipTitleItem4);
-            this.acd_BCHD.SuperTip = superToolTip5;
+            toolTipTitleItem22.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem22.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem22.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem22.Icon")));
+            toolTipTitleItem22.Text = "Báo cáo chứng từ, bill";
+            superToolTip26.Items.Add(toolTipTitleItem22);
+            this.acd_BCHD.SuperTip = superToolTip26;
             this.acd_BCHD.Text = "Báo Cáo CT";
             this.acd_BCHD.Visible = false;
             // 
@@ -1821,12 +1822,12 @@ namespace UI
             this.acd_item_HDMuaHang});
             this.acd_DiChuyen.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_DiChuyen.ImageOptions.SvgImage")));
             this.acd_DiChuyen.Name = "acd_DiChuyen";
-            toolTipTitleItem5.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem5.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem5.Icon")));
-            toolTipTitleItem5.Text = "Hoạt động xuất hàng, phương tiện, EDI";
-            superToolTip6.Items.Add(toolTipTitleItem5);
-            this.acd_DiChuyen.SuperTip = superToolTip6;
+            toolTipTitleItem23.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem23.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem23.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem23.Icon")));
+            toolTipTitleItem23.Text = "Hoạt động xuất hàng, phương tiện, EDI";
+            superToolTip27.Items.Add(toolTipTitleItem23);
+            this.acd_DiChuyen.SuperTip = superToolTip27;
             this.acd_DiChuyen.Text = "Giao Hàng";
             this.acd_DiChuyen.Visible = false;
             // 
@@ -1894,12 +1895,12 @@ namespace UI
             this.acd_item_DaoTao});
             this.acd_HoatDong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_HoatDong.ImageOptions.SvgImage")));
             this.acd_HoatDong.Name = "acd_HoatDong";
-            toolTipTitleItem6.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem6.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem6.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem6.Icon")));
-            toolTipTitleItem6.Text = "Đánh giá, giám sát hoạt động nhân viên";
-            superToolTip7.Items.Add(toolTipTitleItem6);
-            this.acd_HoatDong.SuperTip = superToolTip7;
+            toolTipTitleItem24.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem24.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem24.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem24.Icon")));
+            toolTipTitleItem24.Text = "Đánh giá, giám sát hoạt động nhân viên";
+            superToolTip28.Items.Add(toolTipTitleItem24);
+            this.acd_HoatDong.SuperTip = superToolTip28;
             this.acd_HoatDong.Text = "Hoạt Động";
             this.acd_HoatDong.Visible = false;
             // 
@@ -2004,12 +2005,12 @@ namespace UI
             this.acd_item_KiemHang});
             this.acd_GiamSat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_GiamSat.ImageOptions.SvgImage")));
             this.acd_GiamSat.Name = "acd_GiamSat";
-            toolTipTitleItem7.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem7.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem7.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem7.Icon")));
-            toolTipTitleItem7.Text = "Chấm công, theo dõi công việc nhân viên";
-            superToolTip8.Items.Add(toolTipTitleItem7);
-            this.acd_GiamSat.SuperTip = superToolTip8;
+            toolTipTitleItem25.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem25.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem25.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem25.Icon")));
+            toolTipTitleItem25.Text = "Chấm công, theo dõi công việc nhân viên";
+            superToolTip29.Items.Add(toolTipTitleItem25);
+            this.acd_GiamSat.SuperTip = superToolTip29;
             this.acd_GiamSat.Text = "Giám Sát";
             this.acd_GiamSat.Visible = false;
             // 
@@ -2090,12 +2091,12 @@ namespace UI
             this.acc_item_TheNhanVien});
             this.acd_CaNhan.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_CaNhan.ImageOptions.SvgImage")));
             this.acd_CaNhan.Name = "acd_CaNhan";
-            toolTipTitleItem8.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem8.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem8.Icon")));
-            toolTipTitleItem8.Text = "Thiết lập thông tin nhân viên";
-            superToolTip9.Items.Add(toolTipTitleItem8);
-            this.acd_CaNhan.SuperTip = superToolTip9;
+            toolTipTitleItem26.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem26.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem26.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem26.Icon")));
+            toolTipTitleItem26.Text = "Thiết lập thông tin nhân viên";
+            superToolTip30.Items.Add(toolTipTitleItem26);
+            this.acd_CaNhan.SuperTip = superToolTip30;
             this.acd_CaNhan.Text = "Cá Nhân";
             this.acd_CaNhan.Visible = false;
             // 
@@ -2180,12 +2181,12 @@ namespace UI
             this.acc_item_TaiSanTheChap});
             this.acd_QL.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_QL.ImageOptions.SvgImage")));
             this.acd_QL.Name = "acd_QL";
-            toolTipTitleItem9.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem9.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem9.Icon")));
-            toolTipTitleItem9.Text = "Tổng hợp hoạt động kinh doanh kho";
-            superToolTip10.Items.Add(toolTipTitleItem9);
-            this.acd_QL.SuperTip = superToolTip10;
+            toolTipTitleItem27.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem27.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem27.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem27.Icon")));
+            toolTipTitleItem27.Text = "Tổng hợp hoạt động kinh doanh kho";
+            superToolTip31.Items.Add(toolTipTitleItem27);
+            this.acd_QL.SuperTip = superToolTip31;
             this.acd_QL.Text = "Quản Lý";
             this.acd_QL.Visible = false;
             // 
@@ -2296,12 +2297,12 @@ namespace UI
             this.acc_item_TongHopHoatDong});
             this.acd_KinhDoanh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acd_KinhDoanh.ImageOptions.SvgImage")));
             this.acd_KinhDoanh.Name = "acd_KinhDoanh";
-            toolTipTitleItem10.Appearance.Options.UseTextOptions = true;
-            toolTipTitleItem10.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipTitleItem10.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem10.Icon")));
-            toolTipTitleItem10.Text = "Các hoạt động dành cho kinh doanh";
-            superToolTip11.Items.Add(toolTipTitleItem10);
-            this.acd_KinhDoanh.SuperTip = superToolTip11;
+            toolTipTitleItem28.Appearance.Options.UseTextOptions = true;
+            toolTipTitleItem28.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipTitleItem28.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipTitleItem28.Icon")));
+            toolTipTitleItem28.Text = "Các hoạt động dành cho kinh doanh";
+            superToolTip32.Items.Add(toolTipTitleItem28);
+            this.acd_KinhDoanh.SuperTip = superToolTip32;
             this.acd_KinhDoanh.Text = "Kinh Doanh";
             this.acd_KinhDoanh.Visible = false;
             // 
@@ -2470,12 +2471,12 @@ namespace UI
             this.rpi_btnSearch.Name = "rpi_btnSearch";
             this.rpi_btnSearch.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
             this.rpi_btnSearch.ShowItemShortcut = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem3.Appearance.Options.UseTextOptions = true;
-            toolTipItem3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            toolTipItem3.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipItem3.Icon")));
-            toolTipItem3.Text = "Tìm kiếm Phiếu Nhập, Phiếu Xuất, Vị Trí, Sản Phẩm, Khách Hàng...";
-            superToolTip12.Items.Add(toolTipItem3);
-            this.rpi_btnSearch.SuperTip = superToolTip12;
+            toolTipItem6.Appearance.Options.UseTextOptions = true;
+            toolTipItem6.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            toolTipItem6.Icon = ((System.Drawing.Icon)(resources.GetObject("toolTipItem6.Icon")));
+            toolTipItem6.Text = "Tìm kiếm Phiếu Nhập, Phiếu Xuất, Vị Trí, Sản Phẩm, Khách Hàng...";
+            superToolTip33.Items.Add(toolTipItem6);
+            this.rpi_btnSearch.SuperTip = superToolTip33;
             // 
             // barStaticItem1
             // 

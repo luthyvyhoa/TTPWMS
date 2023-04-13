@@ -13,7 +13,9 @@ namespace Common.Controls
         protected bool IsAccessGranted = false;
         protected DataTable actionsList = null;
         private string functionName = string.Empty;
-        
+        private int UserApplicationRoleGroupFunctionId = 0;
+
+
         public frmBaseForm()
         {
             // Init controls to designer
@@ -63,11 +65,45 @@ namespace Common.Controls
                 {
                     this.IsAccessGranted = true;
                     this.functionName = formName;
+                    this.UserApplicationRoleGroupFunctionId = Convert.ToInt32(funtionName["UserApplicationRoleGroupFunctionId"]);
                     return true;
                 }
             }
             //return false;
             return true;
+        }
+
+        private void ValidateActionForm()
+        {
+            if (this.UserApplicationRoleGroupFunctionId <= 0) return;
+            var tbActionAllow = FileProcess.LoadTable("ST_WMS_LoadApplicationRoleGroupsFunctionActionByUser @UserApplicationRoleGroupFunctionId=" + this.UserApplicationRoleGroupFunctionId);
+            if (tbActionAllow == null || tbActionAllow.Rows.Count <= 0) return;
+
+            // Load all action in form
+            if (this.actionsList == null || this.actionsList.Rows.Count <= 0) return;
+
+            // Disactive all control in form
+            foreach (DataRow actionName in this.actionsList.Rows)
+            {
+                // Find action has exist then disable it
+                string currentControlName = Convert.ToString(actionName["ControlName"]);
+                Control[] controls= this.Controls.Find(currentControlName,true);
+                if (controls == null || controls.Length <= 0) continue;
+                else
+                    controls[0].Enabled = false;
+            }
+
+            // Active controls is allow active
+            foreach (DataRow actionName in tbActionAllow.Rows)
+            {
+                // Find action is allow active
+                string currentControlName = Convert.ToString(actionName["ControlName"]);
+                Control[] controls = this.Controls.Find(currentControlName, true);
+                if (controls == null || controls.Length <= 0) continue;
+                else
+                    controls[0].Enabled = true;
+            }
+
         }
 
         /// <summary>
@@ -92,6 +128,9 @@ namespace Common.Controls
         protected virtual void SetPermissionControl()
         {
             this.actionsList = FileProcess.LoadTable("ST_WMS_LoadAllActionsByFuntion @FuntionName='" + functionName + "'");
+
+            // Validate action permission of user
+            //this.ValidateActionForm();
         }
 
         /// <summary>

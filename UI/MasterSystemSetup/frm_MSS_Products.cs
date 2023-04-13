@@ -1574,6 +1574,28 @@ namespace UI.MasterSystemSetup
 
             // Load he so quy doi
             this.LoadProductMeasure();
+
+            //Default value is active
+            spinEdit_Net.Enabled = true;
+            btnAddPackageType.Enabled = true;
+            spinEdit_GrossWeightPerPackage.Enabled = true;
+            spinEdit_PackagesPerPallet.Enabled = true;
+            spinEdit_PackagesPerPallet2.Enabled = true;
+
+            //Kiểm tra active sizebox, net,gross value khi đã có nhập xuất
+            var dataRo = FileProcess.LoadTable("SP_CheckProductHasRecived @ProductID=" + this.obj_Product.ProductID);
+            if(dataRo!=null && dataRo.Rows.Count>0)
+            {
+                var hasReceivedPro = Convert.ToInt32(dataRo.Rows[0]["HasExist"]);
+                if(hasReceivedPro>0)
+                {
+                    spinEdit_Net.Enabled = false;
+                    btnAddPackageType.Enabled = false;
+                    spinEdit_GrossWeightPerPackage.Enabled = false;
+                    spinEdit_PackagesPerPallet.Enabled = false;
+                    spinEdit_PackagesPerPallet2.Enabled = false;
+                }
+            }
             this.WindowState = FormWindowState.Maximized;
             this.BringToFront();
         }

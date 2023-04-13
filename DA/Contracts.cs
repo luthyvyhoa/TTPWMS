@@ -62,5 +62,7 @@ namespace DA
         public Nullable<System.DateTime> AccountingEndDate { get; set; }
         public string ContractRemarkAccounting { get; set; }
         public string CurrencyUnit { get; set; }
+        public string ConNumber { get; set; }
+        public Nullable<System.DateTime> OldEndDate { get; set; }
     }
 }
